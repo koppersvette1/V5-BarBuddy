@@ -1,157 +1,2280 @@
 
 [
   {
-    "id": "margarita-lead",
-    "name": "Classic Margarita",
-    "type": "Lead",
-    "baseSpirit": "Tequila",
-    "ingredients": [
-      "2 oz Blanco Tequila",
-      "1 oz Fresh Lime Juice",
-      "0.75 oz Cointreau",
-      "Salt for rim"
-    ],
-    "instructions": "Run a lime wedge around the outer rim of a rocks glass and dip in salt. Add tequila, lime juice, and Cointreau to a shaker with ice. Shake well until chilled. Strain into the prepared glass over fresh ice. Garnish with a lime wheel.",
-    "related": {
-      "shadow": "hibiscus-sunrise-shadow",
-      "junior": "kiddi-rita-junior"
-    },
-    "image": "margarita"
-  },
-  {
-    "id": "hibiscus-sunrise-shadow",
-    "name": "Hibiscus Sunrise",
-    "type": "Shadow",
-    "baseSpirit": "N/A",
-    "ingredients": [
-      "3 oz Chilled Hibiscus Tea",
-      "1.5 oz Orange Juice",
-      "0.5 oz Fresh Lime Juice",
-      "0.5 oz Agave Nectar"
-    ],
-    "instructions": "Combine hibiscus tea, orange juice, lime juice, and agave nectar in a shaker with ice. Shake well. Strain into a salt-rimmed glass over fresh ice. Garnish with an orange slice.",
-    "related": {
-      "lead": "margarita-lead"
-    },
-    "image": "hibiscus-mocktail"
-  },
-  {
-    "id": "kiddi-rita-junior",
-    "name": "Kiddi-Rita",
-    "type": "Junior",
-    "baseSpirit": "N/A",
-    "ingredients": [
-      "2 oz Orange Juice",
-      "1 oz Lemonade",
-      "0.5 oz Lime Juice",
-      "Splash of Grenadine"
-    ],
-    "instructions": "Add orange juice, lemonade, and lime juice to a fun glass with ice and stir. Gently pour in a splash of grenadine, which will sink to the bottom creating a sunrise effect. Garnish with a cherry.",
-    "related": {
-      "lead": "margarita-lead"
-    },
-    "image": "kiddi-rita"
-  },
-  {
     "id": "old-fashioned-lead",
     "name": "Old Fashioned",
     "type": "Lead",
     "baseSpirit": "Whiskey",
     "ingredients": [
-      "2 oz Bourbon or Rye Whiskey",
-      "1 Sugar Cube",
-      "2 dashes Angostura Bitters",
-      "Splash of Water"
+      "2 oz Whiskey (Bourbon for sweet, Rye for spicy)",
+      "0.25 oz Demerara Syrup (or 1 sugar cube + 3 dashes water)",
+      "3 dashes Angostura Bitters",
+      "Orange Peel for garnish"
     ],
-    "instructions": "Place the sugar cube in an Old Fashioned glass. Wet it with bitters and a splash of water. Muddle until dissolved. Add a large ice cube, then pour in the whiskey. Stir gently. Garnish with an orange peel.",
+    "instructions": "Add demerara syrup and bitters to mixing glass Add whiskey Fill mixing glass 3/4 full with ice Stir with bar spoon for 30-45 seconds (approx. 40 rotations) Strain into rocks glass over a fresh large ice cube Express orange peel: Hold 4 inches above drink, shiny side down, pinch sharply to spray oils Rub expressed peel around rim of glass and drop in",
     "related": {
-      "shadow": "no-fashioned-shadow",
-      "junior": "spiced-cherry-coke-junior"
+      "shadow": "the-new-fashioned-shadow",
+      "junior": "apple-on-the-rocks-junior"
     },
     "image": "old-fashioned"
   },
   {
-    "id": "no-fashioned-shadow",
-    "name": "No-Fashioned",
+    "id": "the-new-fashioned-shadow",
+    "name": "The New Fashioned",
     "type": "Shadow",
     "baseSpirit": "N/A",
     "ingredients": [
-      "3 oz Smoked Black Tea (chilled)",
-      "0.5 oz Spiced Simple Syrup",
-      "2 dashes Non-alcoholic Aromatic Bitters"
+      "2 oz Non-Alcoholic Whiskey Alternative (e.g., Lyre\u2019s American Malt)",
+      "0.25 oz Demerara Syrup",
+      "3 dashes Non-Alcoholic Aromatic Bitters",
+      "Orange Peel"
     ],
-    "instructions": "In a mixing glass with ice, combine the chilled smoked tea, spiced simple syrup, and non-alcoholic bitters. Stir until well-chilled. Strain into a rocks glass over a large ice cube. Garnish with an orange twist.",
+    "instructions": "Add syrup and non-alcoholic bitters to mixing glass Add the NA whiskey alternative Add ice and stir for 20 seconds (don't over-dilute) Strain over a large ice cube Express orange peel over the glass and insert",
     "related": {
       "lead": "old-fashioned-lead"
     },
     "image": "non-alcoholic-old-fashioned"
   },
   {
-    "id": "spiced-cherry-coke-junior",
-    "name": "Spiced Cherry Coke",
+    "id": "apple-on-the-rocks-junior",
+    "name": "Apple on the Rocks",
     "type": "Junior",
     "baseSpirit": "N/A",
     "ingredients": [
-      "6 oz Coca-Cola",
-      "0.5 oz Grenadine",
-      "1 dash Cinnamon"
+      "4 oz High-quality Apple Juice (cloudy/unfiltered looks best)",
+      "1 dash Grenadine (optional, for color)",
+      "Orange slice",
+      "Large ice cube (or several regular ones)"
     ],
-    "instructions": "Fill a tall glass with ice. Pour in Coca-Cola and grenadine. Add a small dash of cinnamon and stir gently. Garnish with a cherry.",
+    "instructions": "Place large ice cube in glass Pour apple juice over the ice Add a tiny dash of grenadine if you want a \"sunset\" color Stir gently like a grown-up Garnish with an orange slice on the rim",
     "related": {
       "lead": "old-fashioned-lead"
     },
-    "image": "spiced-cherry-coke"
+    "image": "apple-on-the-rocks"
+  },
+  {
+    "id": "manhattan-lead",
+    "name": "Manhattan",
+    "type": "Lead",
+    "baseSpirit": "Rye Whiskey",
+    "ingredients": [
+      "2 oz Rye Whiskey (Rittenhouse or Bulleit Rye)",
+      "1 oz Sweet Vermouth (Carpano Antica or Dolin Rouge)",
+      "2 dashes Angostura Bitters",
+      "Luxardo Cherry for garnish"
+    ],
+    "instructions": "Chill your coupe glass (freezer for 5 mins or fill with ice water) Add rye, sweet vermouth, and bitters to mixing glass Fill mixing glass 3/4 full with ice Stir smoothly for 30-45 seconds Strain into the chilled coupe Garnish with a high-quality cherry (Luxardo or Amarena)",
+    "related": {
+      "shadow": "manhattan-midnight-shadow",
+      "junior": "big-city-cherry-junior"
+    },
+    "image": "manhattan"
+  },
+  {
+    "id": "manhattan-midnight-shadow",
+    "name": "Manhattan Midnight",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Rye Alternative (e.g., Spiritless Kentucky 74)",
+      "1 oz Non-Alcoholic Sweet Vermouth Alternative (e.g., Lyre\u2019s Aperitif Rosso)",
+      "2 dashes Non-Alcoholic Bitters",
+      "Luxardo Cherry"
+    ],
+    "instructions": "Chill coupe glass Combine NA rye, NA vermouth, and bitters in mixing glass Add ice and stir for 20 seconds Strain into chilled glass Drop in cherry",
+    "related": {
+      "lead": "manhattan-lead"
+    },
+    "image": "non-alcoholic-manhattan"
+  },
+  {
+    "id": "big-city-cherry-junior",
+    "name": "Big City Cherry",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Cherry Cola or Dr. Pepper (use Cherry Juice for caffeine-free)",
+      "1 dash Grenadine",
+      "Maraschino Cherry"
+    ],
+    "instructions": "Chill the glass (kids love a frosted glass) Pour the cold soda into the glass (no ice, just like the adult version!) Add a dash of grenadine for extra cherry flavor Drop in a cherry Serve immediately while fizzy",
+    "related": {
+      "lead": "manhattan-lead"
+    },
+    "image": "big-city-cherry"
+  },
+  {
+    "id": "negroni-lead",
+    "name": "Negroni",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "1 oz Gin (London Dry - Tanqueray or Beefeater)",
+      "1 oz Campari",
+      "1 oz Sweet Vermouth (Carpano Antica or Cocchi di Torino)",
+      "Orange Peel for garnish"
+    ],
+    "instructions": "Add gin, Campari, and sweet vermouth to mixing glass Fill mixing glass 3/4 full with ice Stir for 30 seconds (don't under-dilute; Campari needs water to open up) Strain into rocks glass over a fresh large ice cube Express orange peel heavily over the drink Run peel around rim and insert",
+    "related": {
+      "shadow": "nogroni-shadow",
+      "junior": "red-sunset-junior"
+    },
+    "image": "negroni"
+  },
+  {
+    "id": "nogroni-shadow",
+    "name": "Nogroni",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Non-Alcoholic Gin (e.g., Monday Gin or Ritual)",
+      "1 oz Non-Alcoholic Bitter Apertif (e.g., Lyre\u2019s Italian Orange or Giffard Bitter)",
+      "1 oz Non-Alcoholic Sweet Vermouth",
+      "Orange Peel"
+    ],
+    "instructions": "Combine ingredients in a mixing glass with ice Stir for 20 seconds Strain over fresh ice Express orange peel",
+    "related": {
+      "lead": "negroni-lead"
+    },
+    "image": "non-alcoholic-negroni"
+  },
+  {
+    "id": "red-sunset-junior",
+    "name": "Red Sunset",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Cranberry Juice Cocktail",
+      "2 oz Orange Juice (pulp-free)",
+      "Splash of Club Soda or Sprite",
+      "Orange slice"
+    ],
+    "instructions": "Fill glass with ice Pour cranberry juice Pour orange juice Top with a splash of soda for fizz Stir gently Garnish with orange slice",
+    "related": {
+      "lead": "negroni-lead"
+    },
+    "image": "red-sunset"
+  },
+  {
+    "id": "martini-lead",
+    "name": "Martini",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2.5 oz Gin (Plymouth or Tanqueray No. 10)",
+      "0.5 oz Dry Vermouth (Dolin Dry)",
+      "1 dash Orange Bitters (optional but traditional)",
+      "Lemon Twist or Olive for garnish"
+    ],
+    "instructions": "FREEZE THE GLASS: This is non-negotiable. The glass must be icy cold. Add gin, dry vermouth, and bitters to mixing glass Fill mixing glass to the top with ice Stir smoothly for 45-60 seconds (needs significant dilution and chilling) Strain into the frozen glass Garnish: Twist: Express lemon peel, run around rim, drop in. Olive: Rinse brine off olive, drop in (usually 1 or 3, never 2).",
+    "related": {
+      "shadow": "garden-martini-shadow",
+      "junior": "the-spy-drink-junior"
+    },
+    "image": "martini"
+  },
+  {
+    "id": "garden-martini-shadow",
+    "name": "Garden Martini",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2.5 oz Non-Alcoholic Gin (e.g., Seedlip Garden 108)",
+      "0.5 oz Non-Alcoholic Dry Vermouth (e.g., Lyre\u2019s Aperitif Dry)",
+      "Lemon Twist"
+    ],
+    "instructions": "Chill glass thoroughly Combine NA gin and NA vermouth in mixing glass with ice Stir well to chill (NA spirits don't freeze, so get it as cold as possible) Strain into frozen glass Garnish with lemon twist",
+    "related": {
+      "lead": "martini-lead"
+    },
+    "image": "non-alcoholic-martini"
+  },
+  {
+    "id": "the-spy-drink-junior",
+    "name": "The Spy Drink",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz White Grape Juice or Lemonade",
+      "1 oz Club Soda",
+      "1 Green Grape (to look like an olive)"
+    ],
+    "instructions": "Chill the glass Pour grape juice/lemonade Top with soda for sparkle Drop a green grape in the bottom (looks exactly like an olive!) Serve immediately",
+    "related": {
+      "lead": "martini-lead"
+    },
+    "image": "the-spy-drink"
+  },
+  {
+    "id": "sazerac-lead",
+    "name": "Sazerac",
+    "type": "Lead",
+    "baseSpirit": "Rye Whiskey",
+    "ingredients": [
+      "2 oz Rye Whiskey (Sazerac Rye or Rittenhouse)",
+      "0.25 oz Demerara Syrup (or 1 sugar cube)",
+      "4 dashes Peychaud\u2019s Bitters (MUST be Peychaud\u2019s)",
+      "Absinthe (for rinsing the glass)",
+      "Lemon Peel for garnish"
+    ],
+    "instructions": "Prepare Glass: Fill rocks glass with crushed ice and water to chill, set aside In a separate mixing glass, add syrup and Peychaud's bitters Add Rye whiskey and ice to mixing glass Stir for 30-40 seconds Rinse: Dump the ice water out of the rocks glass. Pour a splash of Absinthe in, swirl to coat the entire inside, and discard excess Strain the whiskey mixture into the absinthe-coated glass (NEAT - no ice) Express lemon peel over drink, then discard the peel (traditional) or hang on rim",
+    "related": {
+      "shadow": "n'awlins-fizz-shadow",
+      "junior": "root-beer-sazerac-junior"
+    },
+    "image": "sazerac"
+  },
+  {
+    "id": "n'awlins-fizz-shadow",
+    "name": "N'awlins Fizz",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Rye Alternative",
+      "0.25 oz Simple Syrup",
+      "4 dashes Non-Alcoholic Peychaud's/Anise Bitters",
+      "Drop of Anise Extract (to mimic Absinthe) OR Fennel Tea rinse",
+      "Lemon Peel"
+    ],
+    "instructions": "Chill glass Rinse glass with a drop of anise extract swirled in water, then dump Stir NA rye, syrup, and bitters with ice Strain into the rinsed glass Express lemon peel",
+    "related": {
+      "lead": "sazerac-lead"
+    },
+    "image": "non-alcoholic-sazerac"
+  },
+  {
+    "id": "root-beer-sazerac-junior",
+    "name": "Root Beer Sazerac",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz High-Quality Root Beer (like Virgil's or IBC)",
+      "Lemon Twist"
+    ],
+    "instructions": "Chill the glass (fill with ice water then dump) Pour the Root Beer (chilled) into the glass WITHOUT ice Twist a piece of lemon peel over the top Serve immediately",
+    "related": {
+      "lead": "sazerac-lead"
+    },
+    "image": "root-beer-sazerac"
+  },
+  {
+    "id": "vieux-carr\u00e9-lead",
+    "name": "Vieux Carr\u00e9",
+    "type": "Lead",
+    "baseSpirit": "Split Base",
+    "ingredients": [
+      "1 oz Rye Whiskey",
+      "1 oz Cognac or Brandy",
+      "1 oz Sweet Vermouth",
+      "1 tsp B\u00e9n\u00e9dictine Liqueur",
+      "2 dashes Peychaud\u2019s Bitters",
+      "2 dashes Angostura Bitters",
+      "Lemon Twist or Cherry for garnish"
+    ],
+    "instructions": "Add rye, cognac, sweet vermouth, B\u00e9n\u00e9dictine, and both bitters to mixing glass Fill mixing glass 3/4 full with ice Stir for 30-45 seconds Strain into rocks glass over a fresh large ice cube Express lemon twist over drink and drop in",
+    "related": {
+      "shadow": "quarter-square-shadow",
+      "junior": "fancy-fruit-punch-junior"
+    },
+    "image": "vieux-carr\u00e9"
+  },
+  {
+    "id": "quarter-square-shadow",
+    "name": "Quarter Square",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Non-Alcoholic Rye Alternative",
+      "1 oz Non-Alcoholic Brandy Alternative OR Apple Juice reduced by half",
+      "1 oz Non-Alcoholic Sweet Vermouth",
+      "1 tsp Honey Syrup (mixed with a pinch of clove/nutmeg to mimic B\u00e9n\u00e9dictine)",
+      "Bitters (NA)"
+    ],
+    "instructions": "Combine all ingredients in mixing glass Stir with ice for 30 seconds Strain over large ice cube Garnish with lemon twist",
+    "related": {
+      "lead": "vieux-carr\u00e9-lead"
+    },
+    "image": "non-alcoholic-vieux-carr\u00e9"
+  },
+  {
+    "id": "fancy-fruit-punch-junior",
+    "name": "Fancy Fruit Punch",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Grape Juice (Purple)",
+      "2 oz Apple Juice",
+      "1 dash Grenadine",
+      "Club Soda splash",
+      "Lemon Twist"
+    ],
+    "instructions": "Fill glass with ice Pour grape juice and apple juice (the mix mimics the Rye/Cognac color) Add dash of grenadine Top with splash of soda Stir Garnish with lemon twist",
+    "related": {
+      "lead": "vieux-carr\u00e9-lead"
+    },
+    "image": "fancy-fruit-punch"
+  },
+  {
+    "id": "whiskey-sour-lead",
+    "name": "Whiskey Sour",
+    "type": "Lead",
+    "baseSpirit": "Whiskey",
+    "ingredients": [
+      "2 oz Whiskey (Bourbon for sweet, Rye for spicy)",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "1 Egg White (optional but recommended for texture)",
+      "Cherry and/or Orange Slice for garnish"
+    ],
+    "instructions": "Add whiskey, lemon juice, simple syrup, and egg white to cocktail shaker (NO ice yet) DRY SHAKE: Shake vigorously WITHOUT ice for 15 seconds (this emulsifies the egg white and creates foam) WET SHAKE: Add ice to shaker, shake HARD for 10-12 seconds until shaker is frosty Strain into chilled coupe (up) or rocks glass (over ice) Garnish with cherry and orange flag",
+    "related": {
+      "shadow": "whisk-free-sour-shadow",
+      "junior": "lemon-cloud-junior"
+    },
+    "image": "whiskey-sour"
+  },
+  {
+    "id": "whisk-free-sour-shadow",
+    "name": "Whisk-Free Sour",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Whiskey Alternative (e.g., Spiritless Kentucky 74)",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "1 oz Aquafaba (chickpea water) or Egg White"
+    ],
+    "instructions": "Combine all ingredients in shaker Dry shake (no ice) for 15 seconds Add ice and wet shake for 10 seconds Strain into coupe Garnish with cherry",
+    "related": {
+      "lead": "whiskey-sour-lead"
+    },
+    "image": "non-alcoholic-whiskey-sour"
+  },
+  {
+    "id": "lemon-cloud-junior",
+    "name": "Lemon Cloud",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Lemonade (fresh is best)",
+      "1 oz Orange Juice",
+      "1 oz Aquafaba (liquid from can of chickpeas - tasteless foam!)",
+      "Cherry"
+    ],
+    "instructions": "Pour juices and aquafaba into a jar or shaker Let the kid shake it! (Great activity) Shake until very foamy Pour over fresh ice Top with a cherry",
+    "related": {
+      "lead": "whiskey-sour-lead"
+    },
+    "image": "lemon-cloud"
+  },
+  {
+    "id": "margarita-lead",
+    "name": "Margarita",
+    "type": "Lead",
+    "baseSpirit": "Tequila",
+    "ingredients": [
+      "2 oz Blanco Tequila (100% Agave)",
+      "1 oz Fresh Lime Juice",
+      "0.5 oz Agave Nectar (or Simple Syrup)",
+      "Salt for rim (optional)",
+      "Lime Wedge for garnish"
+    ],
+    "instructions": "Rim half the glass with salt (rub lime on rim, dip in salt) Add tequila, lime juice, and agave to shaker Fill shaker with ice Shake well for 10-12 seconds Strain into glass over fresh ice Garnish with lime wedge",
+    "related": {
+      "shadow": "margarita-zero-shadow",
+      "junior": "limeade-slush-junior"
+    },
+    "image": "margarita"
+  },
+  {
+    "id": "margarita-zero-shadow",
+    "name": "Margarita Zero",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Tequila Alternative (e.g., Ritual Tequila Alternative)",
+      "1 oz Fresh Lime Juice",
+      "0.5 oz Agave Nectar",
+      "Salt Rim"
+    ],
+    "instructions": "Rim glass with salt Shake NA tequila, lime, and agave with ice Strain over fresh ice Garnish with lime",
+    "related": {
+      "lead": "margarita-lead"
+    },
+    "image": "non-alcoholic-margarita"
+  },
+  {
+    "id": "limeade-slush-junior",
+    "name": "Limeade Slush",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Limeade",
+      "1 oz Sprite",
+      "Sugar for rim (instead of salt)",
+      "Lime wedge"
+    ],
+    "instructions": "Rim glass with sugar Fill glass with crushed ice (or blend for a slushie) Pour limeade and Sprite Garnish with lime",
+    "related": {
+      "lead": "margarita-lead"
+    },
+    "image": "limeade-slush"
+  },
+  {
+    "id": "daiquiri-lead",
+    "name": "Daiquiri",
+    "type": "Lead",
+    "baseSpirit": "White Rum",
+    "ingredients": [
+      "2 oz White Rum (Bacardi Superior or Havana Club)",
+      "1 oz Fresh Lime Juice",
+      "0.75 oz Simple Syrup",
+      "Lime Wheel for garnish"
+    ],
+    "instructions": "Chill coupe glass Add rum, lime juice, and syrup to shaker Fill with ice Shake vigorously for 10-12 seconds Strain into chilled coupe Float lime wheel on top",
+    "related": {
+      "shadow": "no-rum-daiquiri-shadow",
+      "junior": "pirate-juice-junior"
+    },
+    "image": "daiquiri"
+  },
+  {
+    "id": "no-rum-daiquiri-shadow",
+    "name": "No-Rum Daiquiri",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Coconut Water",
+      "1 oz Lime Juice",
+      "0.75 oz Simple Syrup",
+      "Lime Wheel"
+    ],
+    "instructions": "Shake ingredients with ice Strain into chilled coupe Garnish",
+    "related": {
+      "lead": "daiquiri-lead"
+    },
+    "image": "non-alcoholic-daiquiri"
+  },
+  {
+    "id": "pirate-juice-junior",
+    "name": "Pirate Juice",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Pineapple Juice",
+      "1 oz Lime Juice",
+      "1 oz Sprite",
+      "Cherry"
+    ],
+    "instructions": "Fill glass with ice Pour pineapple and lime juice Top with Sprite Garnish with cherry",
+    "related": {
+      "lead": "daiquiri-lead"
+    },
+    "image": "pirate-juice"
+  },
+  {
+    "id": "cosmopolitan-lead",
+    "name": "Cosmopolitan",
+    "type": "Lead",
+    "baseSpirit": "Vodka",
+    "ingredients": [
+      "1.5 oz Vodka (Citron Vodka is traditional)",
+      "0.75 oz Triple Sec (Cointreau)",
+      "0.75 oz Fresh Lime Juice",
+      "0.5 oz Cranberry Juice (100% juice, not cocktail)",
+      "Orange Peel for garnish"
+    ],
+    "instructions": "Chill martini glass Add ingredients to shaker Shake with ice for 10-12 seconds Strain into glass (should be pink, not red) Express orange peel over drink",
+    "related": {
+      "shadow": "cosnopolitan-shadow",
+      "junior": "pink-princess/prince-junior"
+    },
+    "image": "cosmopolitan"
+  },
+  {
+    "id": "cosnopolitan-shadow",
+    "name": "Cosnopolitan",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1.5 oz Water (dilution is key!)",
+      "1 oz Cranberry Juice",
+      "0.5 oz Fresh Lime Juice",
+      "0.5 oz Orange Juice (replaces Triple Sec)",
+      "Orange Peel"
+    ],
+    "instructions": "Shake all ingredients with ice Strain into chilled glass Garnish",
+    "related": {
+      "lead": "cosmopolitan-lead"
+    },
+    "image": "non-alcoholic-cosmopolitan"
+  },
+  {
+    "id": "pink-princess/prince-junior",
+    "name": "Pink Princess/Prince",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Cranberry Juice Cocktail (sweetened)",
+      "2 oz Sprite",
+      "Lime wedge"
+    ],
+    "instructions": "Pour cranberry juice into glass with ice Top with Sprite Squeeze lime wedge and drop in",
+    "related": {
+      "lead": "cosmopolitan-lead"
+    },
+    "image": "pink-princess/prince"
+  },
+  {
+    "id": "gimlet-lead",
+    "name": "Gimlet",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Fresh Lime Juice",
+      "0.75 oz Simple Syrup",
+      "Lime Wheel"
+    ],
+    "instructions": "Chill coupe Shake gin, lime, and syrup with ice Strain into coupe Garnish with lime wheel",
+    "related": {
+      "shadow": "garden-gimlet-shadow",
+      "junior": "lime-drop-junior"
+    },
+    "image": "gimlet"
+  },
+  {
+    "id": "garden-gimlet-shadow",
+    "name": "Garden Gimlet",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Seedlip Garden 108 (or cucumber water)",
+      "0.75 oz Lime Juice",
+      "0.75 oz Simple Syrup",
+      "Cucumber slice"
+    ],
+    "instructions": "Shake ingredients with ice Strain into coupe Garnish with cucumber",
+    "related": {
+      "lead": "gimlet-lead"
+    },
+    "image": "non-alcoholic-gimlet"
+  },
+  {
+    "id": "lime-drop-junior",
+    "name": "Lime Drop",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Limeade",
+      "1 oz Club Soda",
+      "Gummy Worm (green)"
+    ],
+    "instructions": "Pour limeade over ice Top with soda Hang gummy worm on rim",
+    "related": {
+      "lead": "gimlet-lead"
+    },
+    "image": "lime-drop"
+  },
+  {
+    "id": "bee's-knees-lead",
+    "name": "Bee's Knees",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Honey Syrup (3 parts honey to 1 part warm water)",
+      "Lemon Twist"
+    ],
+    "instructions": "Make Honey Syrup: Mix honey with a little warm water so it pours easily Add gin, lemon, and honey syrup to shaker Shake with ice Strain into chilled coupe Garnish with twist",
+    "related": {
+      "shadow": "bee's-free-shadow",
+      "junior": "honey-bear-junior"
+    },
+    "image": "bees-knees"
+  },
+  {
+    "id": "bee's-free-shadow",
+    "name": "Bee's Free",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Chamomile Tea (strong brewed, chilled)",
+      "0.75 oz Lemon Juice",
+      "0.75 oz Honey Syrup"
+    ],
+    "instructions": "Shake tea, lemon, and honey with ice Strain into coupe Garnish with lemon",
+    "related": {
+      "lead": "bee's-knees-lead"
+    },
+    "image": "non-alcoholic-bees-knees"
+  },
+  {
+    "id": "honey-bear-junior",
+    "name": "Honey Bear",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Lemonade",
+      "1 tsp Honey (dissolved)",
+      "Lemon slice"
+    ],
+    "instructions": "Stir honey into lemonade Serve over ice",
+    "related": {
+      "lead": "bee's-knees-lead"
+    },
+    "image": "honey-bear"
+  },
+  {
+    "id": "sidecar-lead",
+    "name": "Sidecar",
+    "type": "Lead",
+    "baseSpirit": "Cognac/Brandy",
+    "ingredients": [
+      "2 oz Cognac (VS or VSOP)",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Triple Sec (Cointreau)",
+      "Sugar Rim (Essential)"
+    ],
+    "instructions": "Sugar the rim of the coupe Add Cognac, lemon, and Triple Sec to shaker Shake with ice Strain into sugared glass",
+    "related": {
+      "shadow": "side-kick-shadow",
+      "junior": "sugared-orange-junior"
+    },
+    "image": "sidecar"
+  },
+  {
+    "id": "side-kick-shadow",
+    "name": "Side-Kick",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Strongly brewed black tea (chilled)",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Orange Juice",
+      "0.5 oz Simple Syrup",
+      "Sugar Rim"
+    ],
+    "instructions": "Rim glass with sugar Shake ingredients with ice Strain into glass",
+    "related": {
+      "lead": "sidecar-lead"
+    },
+    "image": "non-alcoholic-sidecar"
+  },
+  {
+    "id": "sugared-orange-junior",
+    "name": "Sugared Orange",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Orange Juice",
+      "1 oz Lemonade",
+      "Splash of Sprite"
+    ],
+    "instructions": "Dip rim in sugar (kids love this part) Pour juices and sprite Serve with ice",
+    "related": {
+      "lead": "sidecar-lead"
+    },
+    "image": "sugared-orange"
+  },
+  {
+    "id": "paper-plane-lead",
+    "name": "Paper Plane",
+    "type": "Lead",
+    "baseSpirit": "Bourbon",
+    "ingredients": [
+      "0.75 oz Bourbon",
+      "0.75 oz Aperol",
+      "0.75 oz Amaro Nonino (Essential)",
+      "0.75 oz Fresh Lemon Juice"
+    ],
+    "instructions": "Add all 4 ingredients to shaker Shake with ice Strain into coupe Garnish with a tiny paper plane (optional)",
+    "related": {
+      "shadow": "paper-glider-shadow",
+      "junior": "orange-flyer-junior"
+    },
+    "image": "paper-plane"
+  },
+  {
+    "id": "paper-glider-shadow",
+    "name": "Paper Glider",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Unsweetened Tea",
+      "1 oz Orange Juice",
+      "0.5 oz Grapefruit Juice (adds bitterness)",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Honey Syrup"
+    ],
+    "instructions": "Shake all ingredients with ice Strain into coupe",
+    "related": {
+      "lead": "paper-plane-lead"
+    },
+    "image": "non-alcoholic-paper-plane"
+  },
+  {
+    "id": "orange-flyer-junior",
+    "name": "Orange Flyer",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Orange Juice",
+      "1 oz Lemonade",
+      "1 Paper Plane (folded paper garnish)"
+    ],
+    "instructions": "Pour juices over ice Rest a small paper plane on the rim (don't let it get wet!)",
+    "related": {
+      "lead": "paper-plane-lead"
+    },
+    "image": "orange-flyer"
+  },
+  {
+    "id": "lemon-drop-lead",
+    "name": "Lemon Drop",
+    "type": "Lead",
+    "baseSpirit": "Vodka",
+    "ingredients": [
+      "2 oz Citron Vodka",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "Sugar Rim",
+      "Lemon Twist"
+    ],
+    "instructions": "Rim glass with sugar Shake vodka, lemon, and syrup with ice Strain into sugared glass Garnish with twist",
+    "related": {
+      "shadow": "lemon-pop-shadow",
+      "junior": "sour-candy-cup-junior"
+    },
+    "image": "lemon-drop"
+  },
+  {
+    "id": "lemon-pop-shadow",
+    "name": "Lemon Pop",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Strong Lemonade",
+      "0.5 oz Vanilla Syrup",
+      "Sugar Rim"
+    ],
+    "instructions": "Rim glass Shake lemonade and vanilla with ice Strain",
+    "related": {
+      "lead": "lemon-drop-lead"
+    },
+    "image": "non-alcoholic-lemon-drop"
+  },
+  {
+    "id": "sour-candy-cup-junior",
+    "name": "Sour Candy Cup",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Lemonade",
+      "1 drop Blue food coloring (optional)",
+      "Sugar Rim"
+    ],
+    "instructions": "Sugar rim Pour lemonade Serve",
+    "related": {
+      "lead": "lemon-drop-lead"
+    },
+    "image": "sour-candy-cup"
+  },
+  {
+    "id": "aviation-lead",
+    "name": "Aviation",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin (London Dry - Beefeater or Tanqueray)",
+      "0.5 oz Maraschino Liqueur (Luxardo brand)",
+      "0.25 oz Cr\u00e8me de Violette (Essential for the color)",
+      "0.75 oz Fresh Lemon Juice",
+      "Luxardo Cherry for garnish"
+    ],
+    "instructions": "Chill coupe glass Add gin, maraschino, cr\u00e8me de violette, and lemon juice to shaker Fill with ice Shake hard for 10-12 seconds Strain into chilled coupe (color should be pale blue/purple) Drop cherry in the bottom",
+    "related": {
+      "shadow": "sky-high-shadow",
+      "junior": "purple-plane-junior"
+    },
+    "image": "aviation"
+  },
+  {
+    "id": "sky-high-shadow",
+    "name": "Sky High",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Seedlip Garden 108",
+      "0.5 oz Cherry Syrup (from Luxardo jar)",
+      "0.25 oz Lavender Syrup (mimics the violet)",
+      "0.75 oz Lemon Juice"
+    ],
+    "instructions": "Shake all ingredients with ice Strain into coupe Garnish with cherry",
+    "related": {
+      "lead": "aviation-lead"
+    },
+    "image": "non-alcoholic-aviation"
+  },
+  {
+    "id": "purple-plane-junior",
+    "name": "Purple Plane",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Lemonade",
+      "1 drop Blue food coloring + 1 drop Red (Purple!)",
+      "Cherry"
+    ],
+    "instructions": "Mix lemonade with food coloring to get light purple Pour over ice Garnish with cherry",
+    "related": {
+      "lead": "aviation-lead"
+    },
+    "image": "purple-plane"
+  },
+  {
+    "id": "clover-club-lead",
+    "name": "Clover Club",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin (Plymouth is traditional)",
+      "0.5 oz Fresh Lemon Juice",
+      "0.5 oz Raspberry Syrup (or muddled fresh raspberries + simple syrup)",
+      "1 Egg White",
+      "Raspberries for garnish"
+    ],
+    "instructions": "Add gin, lemon, raspberry syrup, and egg white to shaker DRY SHAKE: Shake without ice for 15 seconds WET SHAKE: Add ice, shake hard for 10 seconds Strain into chilled coupe Skewer 3 raspberries for garnish",
+    "related": {
+      "shadow": "clover-leaf-shadow",
+      "junior": "berry-foam-junior"
+    },
+    "image": "clover-club"
+  },
+  {
+    "id": "clover-leaf-shadow",
+    "name": "Clover Leaf",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Gin",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Raspberry Syrup",
+      "1 oz Aquafaba (Chickpea water)"
+    ],
+    "instructions": "Dry shake all ingredients Wet shake with ice Strain",
+    "related": {
+      "lead": "clover-club-lead"
+    },
+    "image": "non-alcoholic-clover-club"
+  },
+  {
+    "id": "berry-foam-junior",
+    "name": "Berry Foam",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Raspberry Juice/Lemonade mix",
+      "1 oz Aquafaba",
+      "Raspberries"
+    ],
+    "instructions": "Shake juice and aquafaba until foamy Pour over ice Eat the raspberries",
+    "related": {
+      "lead": "clover-club-lead"
+    },
+    "image": "berry-foam"
+  },
+  {
+    "id": "hemingway-daiquiri-lead",
+    "name": "Hemingway Daiquiri",
+    "type": "Lead",
+    "baseSpirit": "White Rum",
+    "ingredients": [
+      "2 oz White Rum",
+      "0.5 oz Maraschino Liqueur",
+      "0.75 oz Fresh Lime Juice",
+      "0.5 oz Fresh Grapefruit Juice (Ruby Red preferred)",
+      "Lime Wheel"
+    ],
+    "instructions": "Chill coupe Combine all ingredients in shaker Shake with ice Strain into coupe Garnish with lime",
+    "related": {
+      "shadow": "writer's-block-shadow",
+      "junior": "pink-grapefruitade-junior"
+    },
+    "image": "hemingway-daiquiri"
+  },
+  {
+    "id": "writer's-block-shadow",
+    "name": "Writer's Block",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Coconut Water",
+      "0.5 oz Grapefruit Juice",
+      "0.75 oz Lime Juice",
+      "0.5 oz Cherry Syrup (sub for Maraschino)"
+    ],
+    "instructions": "Shake with ice Strain Garnish",
+    "related": {
+      "lead": "hemingway-daiquiri-lead"
+    },
+    "image": "non-alcoholic-hemingway-daiquiri"
+  },
+  {
+    "id": "pink-grapefruitade-junior",
+    "name": "Pink Grapefruitade",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Grapefruit Juice (sweetened)",
+      "2 oz Sprite",
+      "Lime wedge"
+    ],
+    "instructions": "Mix over ice Squeeze lime",
+    "related": {
+      "lead": "hemingway-daiquiri-lead"
+    },
+    "image": "pink-grapefruitade"
+  },
+  {
+    "id": "amaretto-sour-lead",
+    "name": "Amaretto Sour",
+    "type": "Lead",
+    "baseSpirit": "Amaretto + Bourbon",
+    "ingredients": [
+      "1.5 oz Amaretto (Disaronno or Lazzaroni)",
+      "0.75 oz Cask Strength Bourbon (Booker's or Knob Creek)",
+      "1 oz Fresh Lemon Juice",
+      "0.25 oz Simple Syrup",
+      "1 Egg White",
+      "Lemon twist & Cherry"
+    ],
+    "instructions": "Add Amaretto, Bourbon, Lemon, Syrup, and Egg White to shaker DRY SHAKE: Shake without ice for 15 seconds WET SHAKE: Add ice, shake hard for 10 seconds Strain over fresh ice Garnish",
+    "related": {
+      "shadow": "almond-sour-shadow",
+      "junior": "nutty-lemonade-junior"
+    },
+    "image": "amaretto-sour"
+  },
+  {
+    "id": "almond-sour-shadow",
+    "name": "Almond Sour",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1.5 oz Orgeat (Almond Syrup)",
+      "1 oz Lemon Juice",
+      "2 oz Strong Black Tea (replaces bourbon body)",
+      "1 Egg White or Aquafaba"
+    ],
+    "instructions": "Dry shake all ingredients Wet shake with ice Strain over fresh ice",
+    "related": {
+      "lead": "amaretto-sour-lead"
+    },
+    "image": "non-alcoholic-amaretto-sour"
+  },
+  {
+    "id": "nutty-lemonade-junior",
+    "name": "Nutty Lemonade",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Lemonade",
+      "0.5 oz Orgeat (Almond Syrup)",
+      "Cherry"
+    ],
+    "instructions": "Stir lemonade and orgeat Serve over ice",
+    "related": {
+      "lead": "amaretto-sour-lead"
+    },
+    "image": "nutty-lemonade"
+  },
+  {
+    "id": "tom-collins-lead",
+    "name": "Tom Collins",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin (Old Tom Gin is traditional, London Dry is fine)",
+      "1 oz Fresh Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Top with Club Soda (approx 3-4 oz)",
+      "Lemon Wheel & Cherry"
+    ],
+    "instructions": "Add gin, lemon, and syrup to shaker Shake briefly with ice (just to chill/mix) Strain into tall glass filled with fresh ice Top with club soda Stir gently to incorporate Garnish",
+    "related": {
+      "shadow": "tim-collins-shadow",
+      "junior": "sparkling-lemonade-junior"
+    },
+    "image": "tom-collins"
+  },
+  {
+    "id": "tim-collins-shadow",
+    "name": "Tim Collins",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Gin",
+      "1 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "Club Soda"
+    ],
+    "instructions": "Build in glass over ice Stir gently Garnish",
+    "related": {
+      "lead": "tom-collins-lead"
+    },
+    "image": "non-alcoholic-tom-collins"
+  },
+  {
+    "id": "sparkling-lemonade-junior",
+    "name": "Sparkling Lemonade",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Lemon Juice",
+      "1 oz Simple Syrup",
+      "Club Soda",
+      "Cherry"
+    ],
+    "instructions": "Mix lemon and syrup in glass Add ice Top with soda Stir",
+    "related": {
+      "lead": "tom-collins-lead"
+    },
+    "image": "sparkling-lemonade"
+  },
+  {
+    "id": "pisco-sour-lead",
+    "name": "Pisco Sour",
+    "type": "Lead",
+    "baseSpirit": "Pisco",
+    "ingredients": [
+      "2 oz Pisco (Peruvian - Quebranta grape)",
+      "1 oz Fresh Lime Juice",
+      "0.75 oz Simple Syrup",
+      "1 Egg White",
+      "3 drops Angostura Bitters (garnish on top of foam only)"
+    ],
+    "instructions": "Add Pisco, lime, syrup, and egg white to shaker DRY SHAKE: Shake without ice for 15 seconds WET SHAKE: Add ice, shake hard for 10 seconds Strain into glass The Art: Carefully drop 3 drops of bitters onto the white foam. Use a toothpick to drag them into heart shapes.",
+    "related": {
+      "shadow": "inca-sour-shadow",
+      "junior": "grape-foam-junior"
+    },
+    "image": "pisco-sour"
+  },
+  {
+    "id": "inca-sour-shadow",
+    "name": "Inca Sour",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz White Grape Juice",
+      "0.5 oz Lime Juice (increase acidity)",
+      "0.25 oz Over-steeped Green Tea (for earthiness)",
+      "1 Egg White"
+    ],
+    "instructions": "Dry shake all ingredients Wet shake with ice Strain and garnish with bitters drops",
+    "related": {
+      "lead": "pisco-sour-lead"
+    },
+    "image": "non-alcoholic-pisco-sour"
+  },
+  {
+    "id": "grape-foam-junior",
+    "name": "Grape Foam",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz White Grape Juice",
+      "1 oz Lime Juice",
+      "1 oz Aquafaba (for foam)"
+    ],
+    "instructions": "Shake vigorously until foamy Pour into cup",
+    "related": {
+      "lead": "pisco-sour-lead"
+    },
+    "image": "grape-foam"
+  },
+  {
+    "id": "moscow-mule-lead",
+    "name": "Moscow Mule",
+    "type": "Lead",
+    "baseSpirit": "Vodka",
+    "ingredients": [
+      "2 oz Vodka",
+      "0.5 oz Fresh Lime Juice",
+      "4-5 oz Ginger Beer (spicy, NOT Ginger Ale)",
+      "Lime Wedge"
+    ],
+    "instructions": "Fill copper mug with ice Add vodka and lime juice Top with Ginger Beer Stir briefly Garnish with lime",
+    "related": {
+      "shadow": "garden-mule-shadow",
+      "junior": "spicy-soda-junior"
+    },
+    "image": "moscow-mule"
+  },
+  {
+    "id": "garden-mule-shadow",
+    "name": "Garden Mule",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "0.5 oz Lime Juice",
+      "5 oz Ginger Beer",
+      "Cucumber Slices and Mint"
+    ],
+    "instructions": "Muddle cucumber slightly in mug Add ice, lime, and ginger beer Stir",
+    "related": {
+      "lead": "moscow-mule-lead"
+    },
+    "image": "non-alcoholic-moscow-mule"
+  },
+  {
+    "id": "spicy-soda-junior",
+    "name": "Spicy Soda",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Ginger Beer (mild brand)",
+      "1 oz Apple Juice",
+      "Lime wedge"
+    ],
+    "instructions": "Pour over ice Stir",
+    "related": {
+      "lead": "moscow-mule-lead"
+    },
+    "image": "spicy-soda"
   },
   {
     "id": "mojito-lead",
-    "name": "Classic Mojito",
+    "name": "Mojito",
     "type": "Lead",
-    "baseSpirit": "Rum",
+    "baseSpirit": "White Rum",
     "ingredients": [
       "2 oz White Rum",
-      "1 oz Fresh Lime Juice",
-      "2 tsp Sugar",
-      "6-8 Mint Leaves",
-      "Soda Water"
+      "0.75 oz Fresh Lime Juice",
+      "0.5 oz Simple Syrup (or 2 tsp superfine sugar)",
+      "8-10 Fresh Mint Leaves",
+      "Club Soda to top"
     ],
-    "instructions": "In a sturdy glass, gently muddle the mint leaves, sugar, and lime juice. Add the rum and fill the glass with crushed ice. Top with soda water and stir. Garnish with a mint sprig and lime wheel.",
+    "instructions": "Put mint and syrup/sugar in bottom of glass Muddle GENTLY: Just press to release oils. Do not shred the mint! Add lime juice and rum Fill glass 3/4 with crushed ice Stir rapidly to chill and lift mint leaves off bottom Top with soda and more ice Slap a mint sprig (to release aroma) and garnish",
     "related": {
-      "shadow": "virgin-mojito-shadow",
-      "junior": "minty-limeade-junior"
+      "shadow": "nojito-shadow",
+      "junior": "minty-sprite-junior"
     },
     "image": "mojito"
   },
   {
-    "id": "virgin-mojito-shadow",
-    "name": "Virgin Mojito",
+    "id": "nojito-shadow",
+    "name": "Nojito",
     "type": "Shadow",
     "baseSpirit": "N/A",
     "ingredients": [
-      "1.5 oz Fresh Lime Juice",
-      "2 tsp Sugar",
-      "8-10 Mint Leaves",
-      "Sparkling Water or Lemon-Lime Soda"
+      "1 oz Lime Juice",
+      "0.75 oz Simple Syrup",
+      "10 Mint Leaves",
+      "Club Soda"
     ],
-    "instructions": "In a sturdy glass, gently muddle the mint leaves, sugar, and lime juice. Fill the glass with crushed ice. Top with sparkling water or soda and stir well. Garnish with a mint sprig and lime wedge.",
+    "instructions": "Muddle mint, lime, syrup Add ice and soda Stir",
     "related": {
       "lead": "mojito-lead"
     },
-    "image": "virgin-mojito"
+    "image": "non-alcoholic-mojito"
   },
   {
-    "id": "minty-limeade-junior",
-    "name": "Minty Limeade",
+    "id": "minty-sprite-junior",
+    "name": "Minty Sprite",
     "type": "Junior",
     "baseSpirit": "N/A",
     "ingredients": [
-      "4 oz Lemon-Lime Soda",
-      "0.5 oz Fresh Lime Juice",
-      "4-5 Mint Leaves"
+      "4 oz Sprite",
+      "2 Mint Leaves (clapped)",
+      "Lime wedge"
     ],
-    "instructions": "Gently clap the mint leaves between your hands to release their aroma and place them in a glass. Fill the glass with ice. Add lime juice and top with lemon-lime soda. Stir gently. Garnish with a lime wheel.",
+    "instructions": "Clap mint leaves in hand (makes them smell good) Drop in glass with ice Pour Sprite Squeeze lime",
     "related": {
       "lead": "mojito-lead"
     },
-    "image": "minty-limeade"
+    "image": "minty-sprite"
+  },
+  {
+    "id": "paloma-lead",
+    "name": "Paloma",
+    "type": "Lead",
+    "baseSpirit": "Tequila",
+    "ingredients": [
+      "2 oz Blanco Tequila",
+      "0.5 oz Fresh Lime Juice",
+      "Pinch of Salt",
+      "Top with Grapefruit Soda (Squirt, Jarritos Toronja, or Fever-Tree Grapefruit)"
+    ],
+    "instructions": "Rim glass with salt (optional but recommended) Fill glass with ice Add tequila, lime, and salt pinch Top with grapefruit soda Stir gently",
+    "related": {
+      "shadow": "dove-tale-shadow",
+      "junior": "pink-fizz-junior"
+    },
+    "image": "paloma"
+  },
+  {
+    "id": "dove-tale-shadow",
+    "name": "Dove Tale",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Lime Juice",
+      "4 oz Grapefruit Soda",
+      "Salt Pinch",
+      "Splash of Agave"
+    ],
+    "instructions": "Build over ice Stir",
+    "related": {
+      "lead": "paloma-lead"
+    },
+    "image": "non-alcoholic-paloma"
+  },
+  {
+    "id": "pink-fizz-junior",
+    "name": "Pink Fizz",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Squirt or Grapefruit Soda",
+      "1 drop Red food coloring (for pink)",
+      "Sugar Rim"
+    ],
+    "instructions": "Sugar rim Pour soda over ice",
+    "related": {
+      "lead": "paloma-lead"
+    },
+    "image": "pink-fizz"
+  },
+  {
+    "id": "aperol-spritz-lead",
+    "name": "Aperol Spritz",
+    "type": "Lead",
+    "baseSpirit": "Aperol",
+    "ingredients": [
+      "3 oz Prosecco",
+      "2 oz Aperol",
+      "1 oz Club Soda",
+      "Orange Slice"
+    ],
+    "instructions": "Fill wine glass with ice Pour Prosecco Pour Aperol Top with Soda Stir once Garnish with orange slice",
+    "related": {
+      "shadow": "bitter-orange-spritz-shadow",
+      "junior": "orange-sparkle-junior"
+    },
+    "image": "aperol-spritz"
+  },
+  {
+    "id": "bitter-orange-spritz-shadow",
+    "name": "Bitter Orange Spritz",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Non-Alcoholic Aperitif (Lyre\u2019s Italian Spritz)",
+      "3 oz NA Sparkling Wine or Tonic Water",
+      "1 oz Soda",
+      "Orange Slice"
+    ],
+    "instructions": "Build over ice Stir",
+    "related": {
+      "lead": "aperol-spritz-lead"
+    },
+    "image": "non-alcoholic-aperol-spritz"
+  },
+  {
+    "id": "orange-sparkle-junior",
+    "name": "Orange Sparkle",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Orange Juice",
+      "2 oz Club Soda",
+      "Orange Slice"
+    ],
+    "instructions": "Pour juice over ice Top with soda Garnish",
+    "related": {
+      "lead": "aperol-spritz-lead"
+    },
+    "image": "orange-sparkle"
+  },
+  {
+    "id": "pomegranate-hugo-spritz-lead",
+    "name": "Pomegranate Hugo Spritz",
+    "type": "Lead",
+    "baseSpirit": "Elderflower Liqueur",
+    "ingredients": [
+      "0.5 oz Elderflower Liqueur (St-Germain)",
+      "0.5 oz Pomegranate Juice",
+      "3 oz Prosecco",
+      "1 oz Club Soda",
+      "Mint Sprig & Pomegranate Seeds"
+    ],
+    "instructions": "Fill wine glass with ice Add St-Germain and Pomegranate Juice Pour Prosecco Top with Soda Stir gently Garnish with mint and seeds",
+    "related": {
+      "shadow": "pom-flower-fizz-shadow",
+      "junior": "ruby-sparkler-junior"
+    },
+    "image": "pomegranate-hugo-spritz"
+  },
+  {
+    "id": "pom-flower-fizz-shadow",
+    "name": "Pom-Flower Fizz",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "0.5 oz Elderflower Syrup (Monin or Ikea)",
+      "0.5 oz Pomegranate Juice",
+      "4 oz Soda Water",
+      "Mint"
+    ],
+    "instructions": "Build over ice Stir Garnish",
+    "related": {
+      "lead": "pomegranate-hugo-spritz-lead"
+    },
+    "image": "non-alcoholic-pomegranate-hugo-spritz"
+  },
+  {
+    "id": "ruby-sparkler-junior",
+    "name": "Ruby Sparkler",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Pomegranate Juice",
+      "3 oz Sprite",
+      "Pomegranate seeds (for \"jewels\")"
+    ],
+    "instructions": "Pour juice over ice Top with Sprite Drop in seeds",
+    "related": {
+      "lead": "pomegranate-hugo-spritz-lead"
+    },
+    "image": "ruby-sparkler"
+  },
+  {
+    "id": "ranch-water-lead",
+    "name": "Ranch Water",
+    "type": "Lead",
+    "baseSpirit": "Tequila",
+    "ingredients": [
+      "2 oz Blanco Tequila",
+      "1 oz Fresh Lime Juice",
+      "Top with Topo Chico (Must be Topo Chico mineral water)"
+    ],
+    "instructions": "Fill glass with ice Add tequila and lime Top with Topo Chico Stir gently",
+    "related": {
+      "shadow": "ranch-soda-shadow",
+      "junior": "lime-bubble-junior"
+    },
+    "image": "ranch-water"
+  },
+  {
+    "id": "ranch-soda-shadow",
+    "name": "Ranch Soda",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Lime Juice",
+      "Topo Chico",
+      "Cucumber Slice"
+    ],
+    "instructions": "Ice, Lime, Topo Chico Stir",
+    "related": {
+      "lead": "ranch-water-lead"
+    },
+    "image": "non-alcoholic-ranch-water"
+  },
+  {
+    "id": "lime-bubble-junior",
+    "name": "Lime Bubble",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Lime Juice",
+      "4 oz Sprite (sweetness needed for kids)"
+    ],
+    "instructions": "Pour over ice Stir",
+    "related": {
+      "lead": "ranch-water-lead"
+    },
+    "image": "lime-bubble"
+  },
+  {
+    "id": "dark-'n'-stormy-lead",
+    "name": "Dark 'n' Stormy",
+    "type": "Lead",
+    "baseSpirit": "Dark Rum",
+    "ingredients": [
+      "2 oz Gosling\u2019s Black Seal Rum (Trademarked!)",
+      "0.5 oz Lime Juice",
+      "4 oz Ginger Beer",
+      "Lime Wedge"
+    ],
+    "instructions": "Fill glass with ice Pour Ginger Beer and Lime Juice FIRST Float the Dark Rum on top (creates the \"Storm cloud\" effect) Garnish with lime Stir before drinking",
+    "related": {
+      "shadow": "safe-harbor-shadow",
+      "junior": "storm-cloud-junior"
+    },
+    "image": "dark-n-stormy"
+  },
+  {
+    "id": "safe-harbor-shadow",
+    "name": "Safe Harbor",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Ginger Beer",
+      "0.5 oz Lime Juice",
+      "1 oz Molasses Syrup (dilute molasses with water) - floated on top"
+    ],
+    "instructions": "Pour ginger beer and lime over ice Float the molasses syrup",
+    "related": {
+      "lead": "dark-'n'-stormy-lead"
+    },
+    "image": "non-alcoholic-dark-n-stormy"
+  },
+  {
+    "id": "storm-cloud-junior",
+    "name": "Storm Cloud",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Ginger Ale",
+      "1 oz Cola (floated on top)"
+    ],
+    "instructions": "Pour Ginger Ale over ice Gently pour Cola on top to create a dark layer",
+    "related": {
+      "lead": "dark-'n'-stormy-lead"
+    },
+    "image": "storm-cloud"
+  },
+  {
+    "id": "mint-julep-lead",
+    "name": "Mint Julep",
+    "type": "Lead",
+    "baseSpirit": "Bourbon",
+    "ingredients": [
+      "2.5 oz Bourbon (Woodford Reserve is traditional)",
+      "0.5 oz Simple Syrup",
+      "8-10 Mint Leaves"
+    ],
+    "instructions": "Muddle mint and syrup gently in bottom of cup Fill cup halfway with crushed ice Pour bourbon Stir until cup gets frosty Mound more crushed ice on top like a snow cone Garnish with a massive bouquet of mint (slapped)",
+    "related": {
+      "shadow": "maple-mint-julep-shadow",
+      "junior": "mint-snow-cone-junior"
+    },
+    "image": "mint-julep"
+  },
+  {
+    "id": "maple-mint-julep-shadow",
+    "name": "Maple Mint Julep",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Strong Iced Tea (Black)",
+      "0.5 oz Maple Syrup",
+      "Mint leaves"
+    ],
+    "instructions": "Muddle mint and maple Add tea and crushed ice Stir until frosty",
+    "related": {
+      "lead": "mint-julep-lead"
+    },
+    "image": "non-alcoholic-mint-julep"
+  },
+  {
+    "id": "mint-snow-cone-junior",
+    "name": "Mint Snow Cone",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "Crushed Ice",
+      "3 oz Apple Juice",
+      "Mint sprig"
+    ],
+    "instructions": "Fill cup with crushed ice Pour apple juice over it Stick mint in top",
+    "related": {
+      "lead": "mint-julep-lead"
+    },
+    "image": "mint-snow-cone"
+  },
+  {
+    "id": "french-75-lead",
+    "name": "French 75",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "1 oz Gin",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "3 oz Champagne (Brut)"
+    ],
+    "instructions": "Shake gin, lemon, and syrup with ice Strain into flute Top with Champagne Garnish with lemon twist",
+    "related": {
+      "shadow": "french-0-shadow",
+      "junior": "fancy-toast-junior"
+    },
+    "image": "french-75"
+  },
+  {
+    "id": "french-0-shadow",
+    "name": "French 0",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz NA Gin",
+      "0.5 oz Lemon Juice",
+      "0.5 oz Syrup",
+      "NA Sparkling Wine (or Tonic)"
+    ],
+    "instructions": "Shake base Top with NA bubbles",
+    "related": {
+      "lead": "french-75-lead"
+    },
+    "image": "non-alcoholic-french-75"
+  },
+  {
+    "id": "fancy-toast-junior",
+    "name": "Fancy Toast",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "Sparkling Cider or White Grape Juice",
+      "1 Raspberry"
+    ],
+    "instructions": "Pour cider into flute Drop raspberry in bottom",
+    "related": {
+      "lead": "french-75-lead"
+    },
+    "image": "fancy-toast"
+  },
+  {
+    "id": "gin-fizz-lead",
+    "name": "Gin Fizz",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin",
+      "1 oz Fresh Lemon Juice",
+      "0.75 oz Simple Syrup",
+      "1 Egg White",
+      "Club Soda to top"
+    ],
+    "instructions": "Combine gin, lemon, syrup, and egg white in shaker Dry Shake vigoroulsy (15s) Wet Shake with ice (15s) Strain into tall glass (no ice) Slowly top with soda water to lift the foam head",
+    "related": {
+      "shadow": "faux-fizz-shadow",
+      "junior": "vanilla-cloud-junior"
+    },
+    "image": "gin-fizz"
+  },
+  {
+    "id": "faux-fizz-shadow",
+    "name": "Faux Fizz",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz NA Gin (or Lemonade concentrate)",
+      "1 oz Lemon Juice",
+      "0.75 oz Syrup",
+      "1 Egg White",
+      "Soda"
+    ],
+    "instructions": "Same shake procedure as alcoholic version Top with soda",
+    "related": {
+      "lead": "gin-fizz-lead"
+    },
+    "image": "non-alcoholic-gin-fizz"
+  },
+  {
+    "id": "vanilla-cloud-junior",
+    "name": "Vanilla Cloud",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Vanilla Syrup",
+      "1 oz Cream",
+      "Club Soda"
+    ],
+    "instructions": "Stir syrup and cream Top with soda (Italian Soda style)",
+    "related": {
+      "lead": "gin-fizz-lead"
+    },
+    "image": "vanilla-cloud"
+  },
+  {
+    "id": "vesper-lead",
+    "name": "Vesper",
+    "type": "Lead",
+    "baseSpirit": "Gin + Vodka",
+    "ingredients": [
+      "3 oz Gin (Gordon's)",
+      "1 oz Vodka",
+      "0.5 oz Lillet Blanc (or Cocchi Americano)",
+      "Lemon Peel"
+    ],
+    "instructions": "Combine spirits and Lillet Shake well with ice (Bond ordered it shaken) or Stir (better for texture) Strain into chilled glass Express large lemon peel",
+    "related": {
+      "shadow": "the-spy-zero-shadow",
+      "junior": "lemon-water-junior"
+    },
+    "image": "vesper"
+  },
+  {
+    "id": "the-spy-zero-shadow",
+    "name": "The Spy Zero",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz NA Gin",
+      "1 oz Water",
+      "0.5 oz White Grape Juice + drop of vinegar (mimics Lillet)",
+      "Lemon Peel"
+    ],
+    "instructions": "Shake and strain",
+    "related": {
+      "lead": "vesper-lead"
+    },
+    "image": "non-alcoholic-vesper"
+  },
+  {
+    "id": "lemon-water-junior",
+    "name": "Lemon Water",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "Water",
+      "Lemon slices",
+      "Ice"
+    ],
+    "instructions": "It's just fancy water.",
+    "related": {
+      "lead": "vesper-lead"
+    },
+    "image": "lemon-water"
+  },
+  {
+    "id": "tequila-sunrise-lead",
+    "name": "Tequila Sunrise",
+    "type": "Lead",
+    "baseSpirit": "Tequila",
+    "ingredients": [
+      "2 oz Tequila",
+      "4 oz Orange Juice",
+      "0.5 oz Grenadine"
+    ],
+    "instructions": "Fill glass with ice Add tequila and OJ The Trick: Tilt glass and pour grenadine slowly down the side. It will sink to the bottom. Do not stir (serve with gradient visible)",
+    "related": {
+      "shadow": "sweet-sunrise-shadow",
+      "junior": "sunrise-surprise-junior"
+    },
+    "image": "tequila-sunrise"
+  },
+  {
+    "id": "sweet-sunrise-shadow",
+    "name": "Sweet Sunrise",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Orange Juice",
+      "2 oz Sprite",
+      "0.5 oz Grenadine"
+    ],
+    "instructions": "Pour juice and sprite over ice Sink the grenadine",
+    "related": {
+      "lead": "tequila-sunrise-lead"
+    },
+    "image": "non-alcoholic-tequila-sunrise"
+  },
+  {
+    "id": "sunrise-surprise-junior",
+    "name": "Sunrise Surprise",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [],
+    "instructions": "",
+    "related": {
+      "lead": "tequila-sunrise-lead"
+    },
+    "image": "sunrise-surprise"
+  },
+  {
+    "id": "mai-tai-lead",
+    "name": "Mai Tai",
+    "type": "Lead",
+    "baseSpirit": "Aged Rum",
+    "ingredients": [
+      "2 oz Aged Rum (Jamaican preferred - Appleton or Smith & Cross)",
+      "0.5 oz Orange Curacao (Pierre Ferrand)",
+      "0.5 oz Orgeat (Almond Syrup)",
+      "1 oz Fresh Lime Juice",
+      "Garnish: Mint Sprig + Spent Lime Shell (looks like an island and palm tree)"
+    ],
+    "instructions": "Combine all ingredients in shaker Shake with ice Strain into glass filled with crushed ice Garnish with mint sprig and the upside-down lime shell",
+    "related": {
+      "shadow": "mai-no-tai-shadow",
+      "junior": "island-punch-junior"
+    },
+    "image": "mai-tai"
+  },
+  {
+    "id": "mai-no-tai-shadow",
+    "name": "Mai No-Tai",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1 oz Orgeat",
+      "1 oz Lime Juice",
+      "0.5 oz Orange Syrup",
+      "2 oz Strong Black Tea (mimics aged rum)"
+    ],
+    "instructions": "Shake with ice Strain over crushed ice Garnish heavily",
+    "related": {
+      "lead": "mai-tai-lead"
+    },
+    "image": "non-alcoholic-mai-tai"
+  },
+  {
+    "id": "island-punch-junior",
+    "name": "Island Punch",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Pineapple Juice",
+      "2 oz Orange Juice",
+      "Splash Grenadine"
+    ],
+    "instructions": "Pour over ice Umbrella garnish (Essential!)",
+    "related": {
+      "lead": "mai-tai-lead"
+    },
+    "image": "island-punch"
+  },
+  {
+    "id": "pi\u00f1a-colada-lead",
+    "name": "Pi\u00f1a Colada",
+    "type": "Lead",
+    "baseSpirit": "White Rum",
+    "ingredients": [
+      "2 oz White Rum",
+      "2 oz Pineapple Juice",
+      "1.5 oz Cream of Coconut (Coco Lopez - NOT coconut milk)",
+      "0.5 oz Lime Juice (Crucial for balance)"
+    ],
+    "instructions": "Blended: Add all ingredients + 1 cup ice to blender. Blend until smooth. Shaken: Add ingredients to shaker with cubes. Shake HARD. Strain over crushed ice. Garnish with Pineapple Wedge + Cherry",
+    "related": {
+      "shadow": "virgin-colada-shadow",
+      "junior": "coco-snow-junior"
+    },
+    "image": "pi\u00f1a-colada"
+  },
+  {
+    "id": "virgin-colada-shadow",
+    "name": "Virgin Colada",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Pineapple Juice",
+      "1.5 oz Cream of Coconut",
+      "0.5 oz Lime Juice",
+      "Ice"
+    ],
+    "instructions": "Blend with ice",
+    "related": {
+      "lead": "pi\u00f1a-colada-lead"
+    },
+    "image": "non-alcoholic-pi\u00f1a-colada"
+  },
+  {
+    "id": "coco-snow-junior",
+    "name": "Coco Snow",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [],
+    "instructions": "Blend Umbrella",
+    "related": {
+      "lead": "pi\u00f1a-colada-lead"
+    },
+    "image": "coco-snow"
+  },
+  {
+    "id": "zombie-lead",
+    "name": "Zombie",
+    "type": "Lead",
+    "baseSpirit": "Multi-Rum",
+    "ingredients": [
+      "1.5 oz Jamaican Rum",
+      "1.5 oz Gold Puerto Rican Rum",
+      "1 oz 151-Proof Demerara Rum (float)",
+      "0.75 oz Lime Juice",
+      "0.5 oz Falernum (Spiced almond/ginger liqueur)",
+      "0.5 oz Donn\u2019s Mix (2 parts grapefruit juice, 1 part cinnamon syrup)",
+      "1 dash Grenadine",
+      "1 dash Angostura"
+    ],
+    "instructions": "Combine everything (except 151 rum) in shaker/blender cup Flash blend with 1 cup crushed ice for 5 seconds OR shake hard Pour contents into tall glass Top with more crushed ice Float the 151 Rum on top Garnish: Mint sprig (smack it!)",
+    "related": {
+      "shadow": "the-walker-shadow",
+      "junior": "monster-punch-junior"
+    },
+    "image": "zombie"
+  },
+  {
+    "id": "the-walker-shadow",
+    "name": "The Walker",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Grapefruit Juice",
+      "1 oz Lime Juice",
+      "0.5 oz Cinnamon Syrup",
+      "0.5 oz Grenadine",
+      "0.5 oz Ginger Syrup (replaces Falernum spice)",
+      "Mint"
+    ],
+    "instructions": "Shake with ice Pour over crushed ice",
+    "related": {
+      "lead": "zombie-lead"
+    },
+    "image": "non-alcoholic-zombie"
+  },
+  {
+    "id": "monster-punch-junior",
+    "name": "Monster Punch",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Orange Juice",
+      "2 oz Grapefruit Juice",
+      "1 oz Grenadine (looks like blood - spooky!)",
+      "Gummy Worms"
+    ],
+    "instructions": "Pour juices over ice Pour grenadine over top Hang worms out of glass",
+    "related": {
+      "lead": "zombie-lead"
+    },
+    "image": "monster-punch"
+  },
+  {
+    "id": "blue-hawaiian-lead",
+    "name": "Blue Hawaiian",
+    "type": "Lead",
+    "baseSpirit": "Rum + Vodka",
+    "ingredients": [
+      "1 oz White Rum",
+      "1 oz Vodka",
+      "0.5 oz Blue Cura\u00e7ao (Orange liqueur dyed blue)",
+      "3 oz Pineapple Juice",
+      "1 oz Sweet & Sour Mix (Make fresh: 1 part lime/lemon, 1 part sugar)"
+    ],
+    "instructions": "Combine ingredients in shaker Shake with ice Strain over crushed ice (or blend for frozen version) Garnish with pineapple and cherry",
+    "related": {
+      "shadow": "blue-lagoon-shadow",
+      "junior": "ocean-water-junior"
+    },
+    "image": "blue-hawaiian"
+  },
+  {
+    "id": "blue-lagoon-shadow",
+    "name": "Blue Lagoon",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Pineapple Juice",
+      "1 oz Lime Juice",
+      "0.5 oz Blue Cura\u00e7ao Syrup (Monin makes a non-alcoholic one) OR Blue Gatorade/Powerade"
+    ],
+    "instructions": "Shake and pour over ice",
+    "related": {
+      "lead": "blue-hawaiian-lead"
+    },
+    "image": "non-alcoholic-blue-hawaiian"
+  },
+  {
+    "id": "ocean-water-junior",
+    "name": "Ocean Water",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Sprite",
+      "1 drop Blue food coloring",
+      "Swedish Fish candy"
+    ],
+    "instructions": "Dye the Sprite blue Add ice Drop fish in",
+    "related": {
+      "lead": "blue-hawaiian-lead"
+    },
+    "image": "ocean-water"
+  },
+  {
+    "id": "jungle-bird-lead",
+    "name": "Jungle Bird",
+    "type": "Lead",
+    "baseSpirit": "Dark Rum",
+    "ingredients": [
+      "1.5 oz Dark Rum (Blackstrap style adds richness)",
+      "0.75 oz Campari",
+      "1.5 oz Pineapple Juice",
+      "0.5 oz Lime Juice",
+      "0.5 oz Simple Syrup"
+    ],
+    "instructions": "Combine all ingredients in shaker Shake hard with ice (needs good dilution to tame the Campari) Strain into rocks glass over fresh ice Garnish with pineapple wedge",
+    "related": {
+      "shadow": "jungle-dove-shadow",
+      "junior": "pineapple-punch-junior"
+    },
+    "image": "jungle-bird"
+  },
+  {
+    "id": "jungle-dove-shadow",
+    "name": "Jungle Dove",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Pineapple Juice",
+      "0.5 oz Lime Juice",
+      "2 oz San Pellegrino Sanbitter (or Giffard NA Aperitif)",
+      "0.5 oz Molasses Syrup (for the dark rum notes)"
+    ],
+    "instructions": "Shake pineapple, lime, and syrup Strain over ice Top with Sanbitter",
+    "related": {
+      "lead": "jungle-bird-lead"
+    },
+    "image": "non-alcoholic-jungle-bird"
+  },
+  {
+    "id": "pineapple-punch-junior",
+    "name": "Pineapple Punch",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Pineapple Juice",
+      "1 oz Orange Juice",
+      "Lime squeeze"
+    ],
+    "instructions": "Pour over ice Stir",
+    "related": {
+      "lead": "jungle-bird-lead"
+    },
+    "image": "pineapple-punch"
+  },
+  {
+    "id": "penicillin-lead",
+    "name": "Penicillin",
+    "type": "Lead",
+    "baseSpirit": "Scotch",
+    "ingredients": [
+      "2 oz Blended Scotch (Famous Grouse or Monkey Shoulder)",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Honey-Ginger Syrup",
+      "0.25 oz Peated Single Malt Scotch (Laphroaig 10 or Ardbeg) - FLOAT ON TOP",
+      "Candied Ginger garnish"
+    ],
+    "instructions": "Combine blended scotch, lemon, and syrup in shaker Shake with ice Strain over fresh large ice cube The Float: Gently pour the peated scotch over the back of a spoon so it sits on top Garnish with candied ginger",
+    "related": {
+      "shadow": "placebo-shadow",
+      "junior": "ginger-honey-fizz-junior"
+    },
+    "image": "penicillin"
+  },
+  {
+    "id": "placebo-shadow",
+    "name": "Placebo",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Smoked Tea (Lapsang Souchong) - strong brew",
+      "0.75 oz Lemon Juice",
+      "0.75 oz Honey-Ginger Syrup",
+      "Ginger Beer splash"
+    ],
+    "instructions": "Shake tea, lemon, and syrup Strain over ice Top with splash of ginger beer",
+    "related": {
+      "lead": "penicillin-lead"
+    },
+    "image": "non-alcoholic-penicillin"
+  },
+  {
+    "id": "ginger-honey-fizz-junior",
+    "name": "Ginger Honey Fizz",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Ginger Ale",
+      "0.5 oz Honey Syrup",
+      "Lemon squeeze"
+    ],
+    "instructions": "Mix over ice Stir",
+    "related": {
+      "lead": "penicillin-lead"
+    },
+    "image": "ginger-honey-fizz"
+  },
+  {
+    "id": "espresso-martini-lead",
+    "name": "Espresso Martini",
+    "type": "Lead",
+    "baseSpirit": "Vodka",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz Fresh Espresso (Hot is fine)",
+      "0.5 oz Coffee Liqueur (Kahl\u00faa or Mr. Black)",
+      "0.25 oz Simple Syrup (Adjust based on sweetness of liqueur)",
+      "3 Coffee Beans (Garnish)"
+    ],
+    "instructions": "Brew espresso Add all ingredients to shaker with LOTS of ice Shake HARD: You need to aerate the coffee oils to get the foam Strain quickly into chilled glass Place 3 beans in a petal pattern on the foam",
+    "related": {
+      "shadow": "espresso-marti-no-shadow",
+      "junior": "choco-latte-junior"
+    },
+    "image": "espresso-martini"
+  },
+  {
+    "id": "espresso-marti-no-shadow",
+    "name": "Espresso Marti-No",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Fresh Espresso",
+      "1 oz Heavy Cream or Coconut Milk",
+      "0.5 oz Vanilla Syrup",
+      "Chocolate Shavings"
+    ],
+    "instructions": "Shake espresso, cream, and syrup with ice Strain Garnish",
+    "related": {
+      "lead": "espresso-martini-lead"
+    },
+    "image": "non-alcoholic-espresso-martini"
+  },
+  {
+    "id": "choco-latte-junior",
+    "name": "Choco-Latte",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Chocolate Milk",
+      "Whipped Cream",
+      "3 Chocolate Chips (beans)"
+    ],
+    "instructions": "Shake chocolate milk with ice to get it frothy Strain into glass Top with whipped cream and chips",
+    "related": {
+      "lead": "espresso-martini-lead"
+    },
+    "image": "choco-latte"
+  },
+  {
+    "id": "white-russian-lead",
+    "name": "White Russian",
+    "type": "Lead",
+    "baseSpirit": "Vodka",
+    "ingredients": [
+      "2 oz Vodka",
+      "1 oz Coffee Liqueur (Kahl\u00faa)",
+      "1 oz Heavy Cream (or Half & Half)"
+    ],
+    "instructions": "Fill glass with ice Add vodka and Kahl\u00faa Stir to combine Float the cream on top gently Serve layered (drinker stirs it in)",
+    "related": {
+      "shadow": "white-ruskie-shadow",
+      "junior": "cookies-&-cream-junior"
+    },
+    "image": "white-russian"
+  },
+  {
+    "id": "white-ruskie-shadow",
+    "name": "White Ruskie",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Strong Cold Brew Coffee",
+      "0.5 oz Vanilla Syrup",
+      "1 oz Heavy Cream"
+    ],
+    "instructions": "Pour coffee and syrup over ice Float cream",
+    "related": {
+      "lead": "white-russian-lead"
+    },
+    "image": "non-alcoholic-white-russian"
+  },
+  {
+    "id": "cookies-&-cream-junior",
+    "name": "Cookies & Cream",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Milk",
+      "1 oz Chocolate Syrup",
+      "1 Crushed Oreo"
+    ],
+    "instructions": "Stir milk and syrup Top with crushed cookie",
+    "related": {
+      "lead": "white-russian-lead"
+    },
+    "image": "cookies-&-cream"
+  },
+  {
+    "id": "smoked-old-fashioned-lead",
+    "name": "Smoked Old Fashioned",
+    "type": "Lead",
+    "baseSpirit": "Whiskey",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.25 oz Maple Syrup (works better with smoke than sugar)",
+      "3 dashes Angostura Bitters",
+      "Orange Peel",
+      "Smoke: Cherry Wood"
+    ],
+    "instructions": "Build the drink in the glass (Whiskey, syrup, bitters, ice) Stir to chill Place glass in smoking cloche or use top-down smoker Fill with Cherry wood smoke Let sit for 10-15 seconds (don't over-smoke!) Reveal and garnish",
+    "related": {
+      "shadow": "bonfire-zero-shadow",
+      "junior": "campfire-juice-junior"
+    },
+    "image": "smoked-old-fashioned"
+  },
+  {
+    "id": "bonfire-zero-shadow",
+    "name": "Bonfire Zero",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Apple Juice",
+      "0.25 oz Maple Syrup",
+      "Smoke: Cherry Wood"
+    ],
+    "instructions": "Smoke the apple juice. It absorbs smoke wonderfully.",
+    "related": {
+      "lead": "smoked-old-fashioned-lead"
+    },
+    "image": "non-alcoholic-smoked-old-fashioned"
+  },
+  {
+    "id": "campfire-juice-junior",
+    "name": "Campfire Juice",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "Apple Juice",
+      "Toasted Marshmallow garnish"
+    ],
+    "instructions": "Don't smoke the drink. Just garnish with a toasted marshmallow.",
+    "related": {
+      "lead": "smoked-old-fashioned-lead"
+    },
+    "image": "campfire-juice"
+  },
+  {
+    "id": "smoked-manhattan-lead",
+    "name": "Smoked Manhattan",
+    "type": "Lead",
+    "baseSpirit": "Rye Whiskey",
+    "ingredients": [
+      "2 oz Rye Whiskey",
+      "1 oz Sweet Vermouth",
+      "2 dashes Bitters",
+      "Smoke: Oak Wood"
+    ],
+    "instructions": "Smoke the EMPTY glass first (rinse method) Trap smoke in glass with a coaster Stir drink in mixing glass Release smoke from glass and pour drink in immediately",
+    "related": {},
+    "image": "smoked-manhattan"
+  },
+  {
+    "id": "oaxaca-old-fashioned-lead",
+    "name": "Oaxaca Old Fashioned",
+    "type": "Lead",
+    "baseSpirit": "Tequila + Mezcal",
+    "ingredients": [
+      "1.5 oz Reposado Tequila",
+      "0.5 oz Mezcal (This provides the smoke)",
+      "1 tsp Agave Nectar",
+      "2 dashes Mole Bitters",
+      "Flamed Orange Peel"
+    ],
+    "instructions": "Combine ingredients in mixing glass Stir with ice Strain over large cube Flame the peel: Squeeze peel through a lighter flame over the drink",
+    "related": {},
+    "image": "oaxaca-old-fashioned"
+  },
+  {
+    "id": "smoked-boulevardier-lead",
+    "name": "Smoked Boulevardier",
+    "type": "Lead",
+    "baseSpirit": "Bourbon",
+    "ingredients": [
+      "1.5 oz Bourbon",
+      "1 oz Campari",
+      "1 oz Sweet Vermouth",
+      "Smoke: Grapevine or Hickory"
+    ],
+    "instructions": "Stir ingredients with ice Strain over fresh ice Smoke the final drink for 10 seconds",
+    "related": {},
+    "image": "smoked-boulevardier"
+  },
+  {
+    "id": "smoked-penicillin-lead",
+    "name": "Smoked Penicillin",
+    "type": "Lead",
+    "baseSpirit": "Scotch",
+    "ingredients": [],
+    "instructions": "Make standard Penicillin Omit the float of peated scotch Instead, fill cloche with Pear wood smoke Serve",
+    "related": {},
+    "image": "smoked-penicillin"
+  },
+  {
+    "id": "corpse-reviver-#2-lead",
+    "name": "Corpse Reviver #2",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "0.75 oz Gin",
+      "0.75 oz Lillet Blanc",
+      "0.75 oz Triple Sec",
+      "0.75 oz Fresh Lemon Juice",
+      "Absinthe Rinse (Essential)"
+    ],
+    "instructions": "Rinse inside of coupe with Absinthe Shake other ingredients with ice Strain into glass Garnish with lemon twist",
+    "related": {},
+    "image": "corpse-reviver-#2"
+  },
+  {
+    "id": "bramble-lead",
+    "name": "Bramble",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "2 oz Gin",
+      "1 oz Fresh Lemon Juice",
+      "0.5 oz Simple Syrup",
+      "0.5 oz Cr\u00e8me de M\u00fbre (Blackberry Liqueur)"
+    ],
+    "instructions": "Build gin, lemon, syrup in glass Fill with crushed ice Pour Cr\u00e8me de M\u00fbre over the top (creates bleeding effect) Garnish with blackberry",
+    "related": {},
+    "image": "bramble"
+  },
+  {
+    "id": "last-word-lead",
+    "name": "Last Word",
+    "type": "Lead",
+    "baseSpirit": "Gin",
+    "ingredients": [
+      "0.75 oz Gin",
+      "0.75 oz Green Chartreuse",
+      "0.75 oz Maraschino Liqueur",
+      "0.75 oz Fresh Lime Juice"
+    ],
+    "instructions": "Combine all 4 ingredients Shake with ice Strain Brandied Cherry garnish",
+    "related": {},
+    "image": "last-word"
+  },
+  {
+    "id": "gold-rush-lead",
+    "name": "Gold Rush",
+    "type": "Lead",
+    "baseSpirit": "Bourbon",
+    "ingredients": [
+      "2 oz Bourbon",
+      "0.75 oz Fresh Lemon Juice",
+      "0.75 oz Honey Syrup"
+    ],
+    "instructions": "Shake ingredients with ice Strain over fresh ice Lemon twist",
+    "related": {},
+    "image": "gold-rush"
   }
 ]
+
+    
