@@ -1,0 +1,157 @@
+
+[
+  {
+    "id": "margarita-lead",
+    "name": "Classic Margarita",
+    "type": "Lead",
+    "baseSpirit": "Tequila",
+    "ingredients": [
+      "2 oz Blanco Tequila",
+      "1 oz Fresh Lime Juice",
+      "0.75 oz Cointreau",
+      "Salt for rim"
+    ],
+    "instructions": "Run a lime wedge around the outer rim of a rocks glass and dip in salt. Add tequila, lime juice, and Cointreau to a shaker with ice. Shake well until chilled. Strain into the prepared glass over fresh ice. Garnish with a lime wheel.",
+    "related": {
+      "shadow": "hibiscus-sunrise-shadow",
+      "junior": "kiddi-rita-junior"
+    },
+    "image": "margarita"
+  },
+  {
+    "id": "hibiscus-sunrise-shadow",
+    "name": "Hibiscus Sunrise",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Chilled Hibiscus Tea",
+      "1.5 oz Orange Juice",
+      "0.5 oz Fresh Lime Juice",
+      "0.5 oz Agave Nectar"
+    ],
+    "instructions": "Combine hibiscus tea, orange juice, lime juice, and agave nectar in a shaker with ice. Shake well. Strain into a salt-rimmed glass over fresh ice. Garnish with an orange slice.",
+    "related": {
+      "lead": "margarita-lead"
+    },
+    "image": "hibiscus-mocktail"
+  },
+  {
+    "id": "kiddi-rita-junior",
+    "name": "Kiddi-Rita",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "2 oz Orange Juice",
+      "1 oz Lemonade",
+      "0.5 oz Lime Juice",
+      "Splash of Grenadine"
+    ],
+    "instructions": "Add orange juice, lemonade, and lime juice to a fun glass with ice and stir. Gently pour in a splash of grenadine, which will sink to the bottom creating a sunrise effect. Garnish with a cherry.",
+    "related": {
+      "lead": "margarita-lead"
+    },
+    "image": "kiddi-rita"
+  },
+  {
+    "id": "old-fashioned-lead",
+    "name": "Old Fashioned",
+    "type": "Lead",
+    "baseSpirit": "Whiskey",
+    "ingredients": [
+      "2 oz Bourbon or Rye Whiskey",
+      "1 Sugar Cube",
+      "2 dashes Angostura Bitters",
+      "Splash of Water"
+    ],
+    "instructions": "Place the sugar cube in an Old Fashioned glass. Wet it with bitters and a splash of water. Muddle until dissolved. Add a large ice cube, then pour in the whiskey. Stir gently. Garnish with an orange peel.",
+    "related": {
+      "shadow": "no-fashioned-shadow",
+      "junior": "spiced-cherry-coke-junior"
+    },
+    "image": "old-fashioned"
+  },
+  {
+    "id": "no-fashioned-shadow",
+    "name": "No-Fashioned",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "3 oz Smoked Black Tea (chilled)",
+      "0.5 oz Spiced Simple Syrup",
+      "2 dashes Non-alcoholic Aromatic Bitters"
+    ],
+    "instructions": "In a mixing glass with ice, combine the chilled smoked tea, spiced simple syrup, and non-alcoholic bitters. Stir until well-chilled. Strain into a rocks glass over a large ice cube. Garnish with an orange twist.",
+    "related": {
+      "lead": "old-fashioned-lead"
+    },
+    "image": "non-alcoholic-old-fashioned"
+  },
+  {
+    "id": "spiced-cherry-coke-junior",
+    "name": "Spiced Cherry Coke",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "6 oz Coca-Cola",
+      "0.5 oz Grenadine",
+      "1 dash Cinnamon"
+    ],
+    "instructions": "Fill a tall glass with ice. Pour in Coca-Cola and grenadine. Add a small dash of cinnamon and stir gently. Garnish with a cherry.",
+    "related": {
+      "lead": "old-fashioned-lead"
+    },
+    "image": "spiced-cherry-coke"
+  },
+  {
+    "id": "mojito-lead",
+    "name": "Classic Mojito",
+    "type": "Lead",
+    "baseSpirit": "Rum",
+    "ingredients": [
+      "2 oz White Rum",
+      "1 oz Fresh Lime Juice",
+      "2 tsp Sugar",
+      "6-8 Mint Leaves",
+      "Soda Water"
+    ],
+    "instructions": "In a sturdy glass, gently muddle the mint leaves, sugar, and lime juice. Add the rum and fill the glass with crushed ice. Top with soda water and stir. Garnish with a mint sprig and lime wheel.",
+    "related": {
+      "shadow": "virgin-mojito-shadow",
+      "junior": "minty-limeade-junior"
+    },
+    "image": "mojito"
+  },
+  {
+    "id": "virgin-mojito-shadow",
+    "name": "Virgin Mojito",
+    "type": "Shadow",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "1.5 oz Fresh Lime Juice",
+      "2 tsp Sugar",
+      "8-10 Mint Leaves",
+      "Sparkling Water or Lemon-Lime Soda"
+    ],
+    "instructions": "In a sturdy glass, gently muddle the mint leaves, sugar, and lime juice. Fill the glass with crushed ice. Top with sparkling water or soda and stir well. Garnish with a mint sprig and lime wedge.",
+    "related": {
+      "lead": "mojito-lead"
+    },
+    "image": "virgin-mojito"
+  },
+  {
+    "id": "minty-limeade-junior",
+    "name": "Minty Limeade",
+    "type": "Junior",
+    "baseSpirit": "N/A",
+    "ingredients": [
+      "4 oz Lemon-Lime Soda",
+      "0.5 oz Fresh Lime Juice",
+      "4-5 Mint Leaves"
+    ],
+    "instructions": "Gently clap the mint leaves between your hands to release their aroma and place them in a glass. Fill the glass with ice. Add lime juice and top with lemon-lime soda. Stir gently. Garnish with a lime wheel.",
+    "related": {
+      "lead": "mojito-lead"
+    },
+    "image": "minty-limeade"
+  }
+]

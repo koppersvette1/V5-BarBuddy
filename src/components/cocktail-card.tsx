@@ -1,0 +1,162 @@
+'use client';
+
+import { useState, useTransition } from 'react';
+import Image from 'next/image';
+import type { Cocktail } from '@/lib/types';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Wand2, Loader, Flame, Sprout, Baby } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+import { fetchAndCleanExternalRecipe } from '@/app/actions';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+
+interface CocktailCardProps {
+  cocktail: Cocktail;
+}
+
+type ExternalData = {
+  cleanedIngredients: string[];
+  smokeRecommendation?: string;
+};
+
+export default function CocktailCard({ cocktail }: CocktailCardProps) {
+  const [isPending, startTransition] = useTransition();
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [externalData, setExternalData] = useState<ExternalData | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const { toast } = useToast();
+
+  const handleFetchExternal = () => {
+    setIsDialogOpen(true);
+    setExternalData(null);
+    setError(null);
+    startTransition(async () => {
+      const result = await fetchAndCleanExternalRecipe(cocktail.name, cocktail.baseSpirit);
+      if (result.error) {
+        setError(result.error);
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: result.error,
+        });
+      } else {
+        setExternalData(result.data);
+      }
+    });
+  };
+
+  const getBadgeStyle = (type: Cocktail['type']) => {
+    switch (type) {
+      case 'Lead':
+        return { variant: 'default', className: 'bg-primary text-primary-foreground', icon: <Wand2 className="h-3 w-3" /> };
+      case 'Shadow':
+        return { variant: 'secondary', className: 'bg-secondary text-secondary-foreground', icon: <Sprout className="h-3 w-3" /> };
+      case 'Junior':
+        return { variant: 'outline', className: 'border-green-500 text-green-600', icon: <Baby className="h-3 w-3" /> };
+      default:
+        return { variant: 'outline', icon: null };
+    }
+  };
+
+  const badgeInfo = getBadgeStyle(cocktail.type);
+
+  return (
+    <>
+      <Card className="flex flex-col h-full bg-card hover:bg-card/90 transition-colors duration-200 group">
+        <CardHeader>
+          <div className="relative aspect-[3/2] w-full mb-4">
+            <Image
+              src={cocktail.imageUrl || ''}
+              alt={cocktail.name}
+              fill
+              className="rounded-md object-cover"
+              data-ai-hint="cocktail drink"
+            />
+          </div>
+          <div className="flex justify-between items-start">
+            <CardTitle className="font-headline text-2xl">{cocktail.name}</CardTitle>
+            <Badge variant={badgeInfo.variant} className={`gap-1 ${badgeInfo.className}`}>
+              {badgeInfo.icon}
+              {cocktail.type}
+            </Badge>
+          </div>
+          <CardDescription>{cocktail.baseSpirit !== 'N/A' ? `Base: ${cocktail.baseSpirit}` : 'Non-alcoholic'}</CardDescription>
+        </CardHeader>
+        <CardContent className="flex-grow space-y-4">
+          <div>
+            <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Ingredients</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              {cocktail.ingredients.map((ing, i) => (
+                <li key={i}>{ing}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Instructions</h4>
+            <p className="text-sm">{cocktail.instructions}</p>
+          </div>
+        </CardContent>
+        <CardFooter>
+          {cocktail.type === 'Lead' && (
+            <Button
+              onClick={handleFetchExternal}
+              disabled={isPending}
+              className="w-full bg-accent/90 text-accent-foreground hover:bg-accent hover:shadow-md transition-all"
+            >
+              {isPending ? <Loader className="animate-spin" /> : <Wand2 />}
+              <span>Get Pro Tips</span>
+            </Button>
+          )}
+        </CardFooter>
+      </Card>
+
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle className="font-headline text-2xl text-primary">{cocktail.name} - Pro Tips</DialogTitle>
+            <DialogDescription>AI-enhanced recipe from TheCocktailDB.</DialogDescription>
+          </DialogHeader>
+          <div className="py-4 space-y-4">
+            {isPending && (
+              <div className="flex justify-center items-center gap-2 text-muted-foreground">
+                <Loader className="animate-spin h-5 w-5" />
+                <span>Augmenting recipe with AI...</span>
+              </div>
+            )}
+            {error && (
+              <Alert variant="destructive">
+                <AlertTitle>Failed to Fetch Tips</AlertTitle>
+                <AlertDescription>{error}</AlertDescription>
+              </Alert>
+            )}
+            {externalData && (
+              <div className="space-y-6 animate-in fade-in-50 duration-500">
+                <div>
+                  <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Cleaned Ingredients</h4>
+                  <ul className="list-disc list-inside space-y-1 text-sm">
+                    {externalData.cleanedIngredients.map((ing, i) => (
+                      <li key={i}>{ing}</li>
+                    ))}
+                  </ul>
+                </div>
+                {externalData.smokeRecommendation && externalData.smokeRecommendation !== 'No Smoke Pairing Available' && (
+                  <div>
+                     <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-2">
+                      <Flame className="h-4 w-4"/>
+                      Smoke Recommendation
+                    </h4>
+                    <p className="text-sm font-semibold text-primary bg-primary/10 p-3 rounded-md">
+                      {externalData.smokeRecommendation}
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
+  );
+}

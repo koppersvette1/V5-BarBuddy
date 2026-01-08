@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "margarita",
+      "description": "A classic margarita in a salt-rimmed glass with a lime garnish.",
+      "imageUrl": "https://images.unsplash.com/photo-1729615385496-b9091b2823d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFyZ2FyaXRhJTIwY29ja3RhaWx8ZW58MHx8fHwxNzY3ODgwMTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "margarita cocktail"
+    },
+    {
+      "id": "hibiscus-mocktail",
+      "description": "A vibrant red hibiscus mocktail in a tall glass.",
+      "imageUrl": "https://images.unsplash.com/photo-1594026290778-b00634357f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoaWJpc2N1cyUyMGRyaW5rfGVufDB8fHx8MTc2Nzg4MDEyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hibiscus drink"
+    },
+    {
+      "id": "kiddi-rita",
+      "description": "A colorful, kid-friendly drink in a fun glass.",
+      "imageUrl": "https://images.unsplash.com/photo-1492544660250-a20e679019e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2xvcmZ1bCUyMGp1aWNlfGVufDB8fHx8MTc2Nzg4MDEyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colorful juice"
+    },
+    {
+      "id": "old-fashioned",
+      "description": "An old fashioned cocktail in a rocks glass with a large ice cube and an orange peel.",
+      "imageUrl": "https://images.unsplash.com/photo-1628642551066-11f79288a424?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvbGQlMjBmYXNoaW9uZWQlMjBjb2NrdGFpbHxlbnwwfHx8fDE3Njc4ODAxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old fashioned cocktail"
+    },
+    {
+      "id": "non-alcoholic-old-fashioned",
+      "description": "A non-alcoholic version of an old fashioned, dark and rich.",
+      "imageUrl": "https://images.unsplash.com/photo-1610515659669-90b80346cc23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbW9ja3RhaWx8ZW58MHx8fHwxNzY3ODgwMTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dark mocktail"
+    },
+    {
+      "id": "spiced-cherry-coke",
+      "description": "A glass of cherry coke with spices.",
+      "imageUrl": "https://images.unsplash.com/photo-1589841917476-e59b35e30cbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGVycnklMjBjb2xhfGVufDB8fHx8MTc2Nzg4MDEyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cherry cola"
+    },
+    {
+      "id": "mojito",
+      "description": "A refreshing mojito with mint and lime in a highball glass.",
+      "imageUrl": "https://images.unsplash.com/photo-1628755913854-db7e0568b149?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2ppdG8lMjBjb2NrdGFpbHxlbnwwfHx8fDE3Njc4NDIzMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mojito cocktail"
+    },
+    {
+      "id": "virgin-mojito",
+      "description": "A non-alcoholic mojito packed with fresh mint and lime.",
+      "imageUrl": "https://picsum.photos/seed/virgin-mojito/600/400",
+      "imageHint": "mint limeade"
+    },
+    {
+      "id": "minty-limeade",
+      "description": "A simple and sweet minty limeade for kids.",
+      "imageUrl": "https://images.unsplash.com/photo-1557280897-271772a62f0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsaW1lYWRlJTIwZHJpbmt8ZW58MHx8fHwxNzY3ODgwMTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "limeade drink"
+    }
+  ]
 }

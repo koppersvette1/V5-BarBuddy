@@ -1,0 +1,1 @@
+This folder is intended for the 22-file markdown manual, as per the user request.
