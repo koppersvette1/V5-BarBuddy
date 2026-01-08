@@ -84,7 +84,7 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
 
   return (
     <div className="space-y-8">
-      <div className="p-6 border-2 border-dashed border-primary/20 rounded-lg bg-card shadow-sm">
+      <div className="p-4 md:p-6 border-2 border-dashed border-primary/20 rounded-lg bg-card shadow-sm">
         <div className="relative">
            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
@@ -92,7 +92,7 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
             placeholder="Search for a cocktail..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
-            className="w-full text-lg pl-10 h-12"
+            className="w-full text-base md:text-lg pl-10 h-12"
           />
         </div>
 
@@ -106,7 +106,7 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
           </CollapsibleTrigger>
           <CollapsibleContent>
             <div className="mt-4 p-4 border rounded-md bg-background max-h-64 overflow-y-auto">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {allIngredients.map(ingredient => (
                   <div key={ingredient} className="flex items-center space-x-2">
                     <Checkbox
