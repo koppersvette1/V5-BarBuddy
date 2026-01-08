@@ -11,7 +11,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
-import { Mixer, ChevronDown, ChevronUp, Search } from 'lucide-react';
+import { SlidersHorizontal, ChevronDown, ChevronUp, Search } from 'lucide-react';
 import CocktailTriadCard from './cocktail-triad-card';
 
 // Helper to extract the main ingredient name (e.g., "2 oz Tequila" -> "Tequila")
@@ -99,7 +99,7 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
         <Collapsible open={isFilterOpen} onOpenChange={setIsFilterOpen}>
           <CollapsibleTrigger asChild>
             <Button variant="ghost" className="mt-4 w-full justify-center gap-2 text-primary hover:text-primary hover:bg-primary/10">
-              <Mixer className="h-4 w-4" />
+              <SlidersHorizontal className="h-4 w-4" />
               Filter by Your Inventory ({inventory.length} selected)
               {isFilterOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </Button>

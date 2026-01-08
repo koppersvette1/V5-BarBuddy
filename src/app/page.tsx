@@ -3,7 +3,7 @@ import path from 'path';
 import Header from '@/components/header';
 import CocktailSearch from '@/components/cocktail-search';
 import type { Cocktail } from '@/lib/types';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { placeholderImages } from '@/lib/placeholder-images.json';
 
 export default async function Home() {
   // The user requested a Python script to build this JSON from markdown.
@@ -20,7 +20,7 @@ export default async function Home() {
   }
 
 
-  const imageMap = PlaceHolderImages.reduce((acc, img) => {
+  const imageMap = placeholderImages.reduce((acc, img) => {
     acc[img.id] = img.imageUrl;
     return acc;
   }, {} as Record<string, string>);
