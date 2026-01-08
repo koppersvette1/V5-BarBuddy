@@ -50,13 +50,13 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
   const getBadgeStyle = (type: Cocktail['type']) => {
     switch (type) {
       case 'Lead':
-        return { variant: 'default', className: 'bg-primary text-primary-foreground', icon: <Wand2 className="h-3 w-3" /> };
+        return { variant: 'default' as const, className: 'bg-primary text-primary-foreground', icon: <Flame className="h-3 w-3" /> };
       case 'Shadow':
-        return { variant: 'secondary', className: 'bg-secondary text-secondary-foreground', icon: <Sprout className="h-3 w-3" /> };
+        return { variant: 'secondary' as const, className: 'bg-secondary text-secondary-foreground', icon: <Sprout className="h-3 w-3" /> };
       case 'Junior':
-        return { variant: 'outline', className: 'border-green-500 text-green-600', icon: <Baby className="h-3 w-3" /> };
+        return { variant: 'outline' as const, className: 'border-green-500 text-green-600', icon: <Baby className="h-3 w-3" /> };
       default:
-        return { variant: 'outline', icon: null };
+        return { variant: 'outline' as const, icon: null };
     }
   };
 

@@ -1,9 +1,16 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import Header from '@/components/header';
 import CocktailSearch from '@/components/cocktail-search';
 import type { Cocktail } from '@/lib/types';
 import { placeholderImages } from '@/lib/placeholder-images.json';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
 
 export default async function Home() {
   // The user requested a Python script to build this JSON from markdown.
@@ -32,7 +39,6 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <Header />
       <main className="flex-1 container mx-auto p-4 md:p-8">
         <CocktailSearch cocktails={cocktailsWithImages} />
       </main>

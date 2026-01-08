@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 import { SidebarProvider, Sidebar, SidebarInset, SidebarRail } from '@/components/ui/sidebar';
 import AppSidebar from '@/components/app-sidebar';
+import Header from '@/components/header';
 
 export const metadata: Metadata = {
   title: 'BarBuddy V5: The Triad Cocktail Engine',
@@ -28,6 +29,7 @@ export default function RootLayout({
             <SidebarRail />
           </Sidebar>
           <SidebarInset>
+            <Header />
             {children}
           </SidebarInset>
           <Toaster />
