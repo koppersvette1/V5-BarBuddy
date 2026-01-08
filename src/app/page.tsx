@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import CocktailSearch from '@/components/cocktail-search';
 import type { Cocktail } from '@/lib/types';
-import { placeholderImages } from '@/lib/placeholder-images.json';
+import imageData from '@/lib/placeholder-images.json';
 import {
   Card,
   CardContent,
@@ -26,6 +26,7 @@ export default async function Home() {
     // Continue with an empty array if the file is missing or invalid
   }
 
+  const { placeholderImages } = imageData;
 
   const imageMap = placeholderImages.reduce((acc, img) => {
     acc[img.id] = img.imageUrl;
