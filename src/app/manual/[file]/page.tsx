@@ -86,12 +86,12 @@ export default async function ManualPage({ params }: { params: { file: string } 
 
           <div className="flex justify-between mt-12 border-t pt-4 not-prose">
             {prevFile ? (
-              <Link href={`/manual/${prevFile}`} passHref>
+              <Link href={`/manual/${encodeURIComponent(prevFile)}`} passHref>
                 <Button variant="outline">Previous</Button>
               </Link>
             ) : <div />}
             {nextFile ? (
-              <Link href={`/manual/${nextFile}`} passHref>
+              <Link href={`/manual/${encodeURIComponent(nextFile)}`} passHref>
                 <Button variant="outline">Next</Button>
               </Link>
             ) : <div />}

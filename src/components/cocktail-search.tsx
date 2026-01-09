@@ -16,10 +16,35 @@ import CocktailTriadCard from './cocktail-triad-card';
 
 // Helper to extract the main ingredient name (e.g., "2 oz Tequila" -> "Tequila")
 const getIngredientName = (ingredient: string): string => {
-  return ingredient
-    .replace(/^\d+(\/\d+)?(\.\d+)?\s*(oz|ml|cl|part|parts|dash|dashes|splash|splashes|to|taste|tsp|tbsp|cup|cups)?\s*/i, '')
-    .trim();
+  // More robust regex to handle various formats
+  const match = ingredient.match(
+    /^(?:\d+(?:\/\d+)?(?:\.\d+)?\s*(?:oz|ml|cl|part|parts|dash|dashes|splash|splashes|to|taste|tsp|tbsp|cup|cups)?\s*)?(.*)/i
+  );
+  let name = match ? match[1].trim() : ingredient.trim();
+  // Further clean up by removing text in parentheses, e.g., (Bourbon for sweet, Rye for spicy)
+  name = name.replace(/\s*\(.*\)/, '').trim();
+  // Handle cases like "Whiskey (Bourbon for sweet, Rye for spicy)"
+  if (name.includes('Whiskey')) return 'Whiskey';
+  if (name.includes('Gin')) return 'Gin';
+  if (name.includes('Tequila')) return 'Tequila';
+  if (name.includes('Vodka')) return 'Vodka';
+  if (name.includes('Rum')) return 'Rum';
+  if (name.includes('Cognac')) return 'Cognac';
+  if (name.includes('Brandy')) return 'Brandy';
+  if (name.includes('Pisco')) return 'Pisco';
+  if (name.includes('Scotch')) return 'Scotch';
+  if (name.includes('Campari')) return 'Campari';
+  if (name.includes('Aperol')) return 'Aperol';
+  if (name.includes('Amaretto')) return 'Amaretto';
+
+  const firstWord = name.split(' ')[0];
+  if (['Lillet', 'Peychaud’s', 'Angostura', 'Prosecco', 'Champagne'].includes(firstWord)) {
+    return firstWord;
+  }
+  
+  return name;
 };
+
 
 export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -36,10 +61,10 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
     cocktails.forEach(cocktail => {
       cocktail.ingredients.forEach(ing => {
         const name = getIngredientName(ing);
-        if (name) ingredientsSet.add(name);
+        if (name && name.length > 1) ingredientsSet.add(name); // Ensure name is not empty
       });
     });
-    return Array.from(ingredientsSet).sort();
+    return Array.from(ingredientsSet).sort((a, b) => a.localeCompare(b));
   }, [cocktails]);
 
   const handleInventoryChange = (ingredient: string) => {
@@ -61,11 +86,13 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
       if (!searchTermMatch) return false;
 
       if (inventory.length > 0) {
-        const cocktailIngredients = cocktail.ingredients.map(getIngredientName);
-        const hasAllIngredients = cocktailIngredients.every(ing =>
-          inventory.includes(ing)
-        );
-        if (!hasAllIngredients) return false;
+        const cocktailIngredients = new Set(cocktail.ingredients.map(getIngredientName));
+        const hasAllInventoryItems = inventory.every(item => {
+            // Check if any ingredient in the cocktail starts with the inventory item
+            // This handles "Whiskey" matching "2 oz Whiskey (Bourbon or Rye)"
+            return Array.from(cocktailIngredients).some(cocktailIng => cocktailIng.toLowerCase().includes(item.toLowerCase()));
+        });
+        if (!hasAllInventoryItems) return false;
       }
       
       return true;

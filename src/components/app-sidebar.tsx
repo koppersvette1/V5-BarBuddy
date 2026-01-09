@@ -50,7 +50,7 @@ export default function AppSidebar() {
           </SidebarMenuItem>
         
           <SidebarGroup>
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
               <AccordionItem value="item-1" className="border-none">
                 <AccordionTrigger className="w-full hover:no-underline">
                   <SidebarMenuButton asChild isActive={true}>
@@ -64,7 +64,7 @@ export default function AppSidebar() {
                   <SidebarMenuSub>
                     {manualFiles.map(item => (
                       <SidebarMenuSubItem key={item.file}>
-                        <Link href={`/manual/${item.file}`}>
+                        <Link href={`/manual/${encodeURIComponent(item.file)}`}>
                           <SidebarMenuSubButton asChild>
                             <span>{item.name}</span>
                           </SidebarMenuSubButton>

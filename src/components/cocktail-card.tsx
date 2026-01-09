@@ -68,7 +68,7 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
             <CardTitle className="font-headline text-2xl">{cocktail.name}</CardTitle>
             <Badge variant={badgeInfo.variant} className={badgeInfo.className}>
               {badgeInfo.icon}
-              {cocktail.type}
+              <span>{cocktail.type}</span>
             </Badge>
           </div>
           <CardDescription>{cocktail.baseSpirit !== 'N/A' ? `Base: ${cocktail.baseSpirit}` : 'Non-alcoholic'}</CardDescription>
