@@ -6,10 +6,9 @@ import type { Cocktail } from '@/lib/types';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogClose } from '@/components/ui/dialog';
 import { Wand2, Loader, Flame, Sprout, Baby } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { fetchAndCleanExternalRecipe } from '@/app/actions';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
 interface CocktailCardProps {
@@ -29,38 +28,28 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
   const { toast } = useToast();
 
   const handleFetchExternal = () => {
-    setIsDialogOpen(true);
-    setExternalData(null);
-    setError(null);
-    startTransition(async () => {
-      const result = await fetchAndCleanExternalRecipe(cocktail.name, cocktail.baseSpirit);
-      if (result.error) {
-        setError(result.error);
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: result.error,
-        });
-      } else {
-        setExternalData(result.data);
-      }
+    // This function is currently not connected to any AI flow.
+    // It is a placeholder for future AI-powered features.
+    toast({
+      title: "Pro Tips Coming Soon!",
+      description: "This feature will provide AI-powered enhancements to your recipes.",
     });
   };
 
-  const getBadgeStyle = (type: Cocktail['type']) => {
+  const getBadgeInfo = (type: Cocktail['type']) => {
     switch (type) {
       case 'Lead':
-        return { variant: 'default' as const, className: 'bg-primary text-primary-foreground', icon: <Flame className="h-3 w-3" /> };
+        return { variant: 'default' as const, className: 'bg-primary text-primary-foreground', icon: <Flame className="h-3 w-3 mr-1" /> };
       case 'Shadow':
-        return { variant: 'secondary' as const, className: 'bg-secondary text-secondary-foreground', icon: <Sprout className="h-3 w-3" /> };
+        return { variant: 'secondary' as const, className: 'bg-secondary text-secondary-foreground', icon: <Sprout className="h-3 w-3 mr-1" /> };
       case 'Junior':
-        return { variant: 'outline' as const, className: 'border-green-500 text-green-600', icon: <Baby className="h-3 w-3" /> };
+        return { variant: 'outline' as const, className: 'border-green-500 text-green-600', icon: <Baby className="h-3 w-3 mr-1" /> };
       default:
         return { variant: 'outline' as const, icon: null };
     }
   };
 
-  const badgeInfo = getBadgeStyle(cocktail.type);
+  const badgeInfo = getBadgeInfo(cocktail.type);
 
   return (
     <>
@@ -77,7 +66,7 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
           </div>
           <div className="flex justify-between items-start">
             <CardTitle className="font-headline text-2xl">{cocktail.name}</CardTitle>
-            <Badge variant={badgeInfo.variant} className={`gap-1 ${badgeInfo.className}`}>
+            <Badge variant={badgeInfo.variant} className={badgeInfo.className}>
               {badgeInfo.icon}
               {cocktail.type}
             </Badge>

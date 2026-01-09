@@ -1,5 +1,5 @@
 import { Home, BookOpen, Search, Flame } from 'lucide-react';
-import { SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarGroup, SidebarGroupLabel, SidebarMenuSub, SidebarMenuSubItem, SidebarMenuSubButton } from './ui/sidebar';
+import { SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarGroup, SidebarMenuSub, SidebarMenuSubItem, SidebarMenuSubButton } from './ui/sidebar';
 import {
   Accordion,
   AccordionContent,
@@ -64,7 +64,7 @@ export default function AppSidebar() {
                   <SidebarMenuSub>
                     {manualFiles.map(item => (
                       <SidebarMenuSubItem key={item.file}>
-                        <Link href={`/manual/${item.file}`} legacyBehavior passHref>
+                        <Link href={`/manual/${item.file}`} passHref>
                           <SidebarMenuSubButton>
                             {item.name}
                           </SidebarMenuSubButton>
