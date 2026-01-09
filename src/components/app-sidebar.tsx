@@ -70,7 +70,7 @@ export default function AppSidebar() {
                   <SidebarMenuSub>
                     {manualFiles.map(item => (
                       <SidebarMenuSubItem key={item.file}>
-                        <Link href={`/manual/${encodeURIComponent(item.file)}`}>
+                        <Link href={`/manual/${encodeURIComponent(item.file)}`} passHref>
                           <SidebarMenuSubButton asChild>
                             <span>{item.name}</span>
                           </SidebarMenuSubButton>
