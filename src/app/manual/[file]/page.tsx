@@ -28,7 +28,9 @@ const getMarkdownFiles = async () => {
 
 
 export default async function ManualPage({ params }: { params: { file: string } }) {
-  if (typeof params.file !== 'string') {
+  const decodedFile = params.file ? decodeURIComponent(params.file) : undefined;
+  
+  if (typeof decodedFile !== 'string') {
     return (
         <div className="flex flex-col min-h-screen bg-background">
           <main className="flex-1 container mx-auto p-4 md:p-8">
@@ -40,9 +42,9 @@ export default async function ManualPage({ params }: { params: { file: string } 
   }
     
   const manualDir = path.join(process.cwd(), 'manual', 'Manual');
-  const filePath = path.join(manualDir, params.file);
+  const filePath = path.join(manualDir, decodedFile);
   let content = '';
-  let title = params.file.replace('.md', '').replace(/File \d+\.\d+ - /, '');
+  let title = decodedFile.replace('.md', '').replace(/File \d+\.\d+ - /, '');
 
   try {
     content = await fs.readFile(filePath, 'utf8');
@@ -51,14 +53,14 @@ export default async function ManualPage({ params }: { params: { file: string } 
       <div className="flex flex-col min-h-screen bg-background">
         <main className="flex-1 container mx-auto p-4 md:p-8">
           <h1 className="text-3xl font-bold text-destructive">Error</h1>
-          <p className="mt-4">Could not load the manual file: {params.file}</p>
+          <p className="mt-4">Could not load the manual file: {decodedFile}</p>
         </main>
       </div>
     );
   }
 
   const allFiles = await getMarkdownFiles();
-  const currentIndex = allFiles.findIndex(f => f === params.file);
+  const currentIndex = allFiles.findIndex(f => f === decodedFile);
   const prevFile = currentIndex > 0 ? allFiles[currentIndex - 1] : null;
   const nextFile = currentIndex < allFiles.length - 1 ? allFiles[currentIndex + 1] : null;
 
