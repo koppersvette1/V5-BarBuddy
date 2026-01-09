@@ -23,20 +23,33 @@ const getIngredientName = (ingredient: string): string => {
   let name = match ? match[1].trim() : ingredient.trim();
   // Further clean up by removing text in parentheses, e.g., (Bourbon for sweet, Rye for spicy)
   name = name.replace(/\s*\(.*\)/, '').trim();
-  // Handle cases like "Whiskey (Bourbon for sweet, Rye for spicy)"
-  if (name.includes('Whiskey')) return 'Whiskey';
-  if (name.includes('Gin')) return 'Gin';
-  if (name.includes('Tequila')) return 'Tequila';
-  if (name.includes('Vodka')) return 'Vodka';
-  if (name.includes('Rum')) return 'Rum';
-  if (name.includes('Cognac')) return 'Cognac';
-  if (name.includes('Brandy')) return 'Brandy';
-  if (name.includes('Pisco')) return 'Pisco';
-  if (name.includes('Scotch')) return 'Scotch';
-  if (name.includes('Campari')) return 'Campari';
-  if (name.includes('Aperol')) return 'Aperol';
-  if (name.includes('Amaretto')) return 'Amaretto';
+  
+  // Create a mapping for base spirits that might have variations in the text
+  const baseSpirits: { [key: string]: string[] } = {
+    'Whiskey': ['Whiskey', 'Bourbon', 'Rye', 'Scotch'],
+    'Gin': ['Gin'],
+    'Tequila': ['Tequila', 'Mezcal'],
+    'Vodka': ['Vodka'],
+    'Rum': ['Rum'],
+    'Brandy': ['Cognac', 'Brandy'],
+    'Pisco': ['Pisco'],
+    'Campari': ['Campari'],
+    'Aperol': ['Aperol'],
+    'Amaretto': ['Amaretto'],
+    'Lillet Blanc': ['Lillet'],
+    'Peychaud’s Bitters': ['Peychaud’s'],
+    'Angostura Bitters': ['Angostura'],
+    'Prosecco': ['Prosecco'],
+    'Champagne': ['Champagne'],
+  };
 
+  for (const base in baseSpirits) {
+    if (baseSpirits[base].some(variant => name.toLowerCase().includes(variant.toLowerCase()))) {
+      return base;
+    }
+  }
+
+  // Handle simple cases
   const firstWord = name.split(' ')[0];
   if (['Lillet', 'Peychaud’s', 'Angostura', 'Prosecco', 'Champagne'].includes(firstWord)) {
     return firstWord;
@@ -87,11 +100,9 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
 
       if (inventory.length > 0) {
         const cocktailIngredients = new Set(cocktail.ingredients.map(getIngredientName));
-        const hasAllInventoryItems = inventory.every(item => {
-            // Check if any ingredient in the cocktail starts with the inventory item
-            // This handles "Whiskey" matching "2 oz Whiskey (Bourbon or Rye)"
-            return Array.from(cocktailIngredients).some(cocktailIng => cocktailIng.toLowerCase().includes(item.toLowerCase()));
-        });
+        const hasAllInventoryItems = inventory.every(item => 
+            Array.from(cocktailIngredients).some(cocktailIng => cocktailIng.toLowerCase().includes(item.toLowerCase()))
+        );
         if (!hasAllInventoryItems) return false;
       }
       

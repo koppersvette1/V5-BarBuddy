@@ -31,6 +31,12 @@ const manualFiles = [
   { name: "Syrups Guide", file: "File 13.0 - Syrups & Sweeteners Guide Complete.md" },
   { name: "Advanced Techniques", file: "File 14.0 - Advanced Techniques Complete.md" },
   { name: "Troubleshooting", file: "File 15.0 - Troubleshooting Complete.md" },
+  { name: "Bar Tools", file: "File 16.0 - Bar Tools Complete.md"},
+  { name: "Cocktail Categories", file: "File 17.0 - Cocktail Categories Complete.md"},
+  { name: "Taste Profile", file: "File 18.0 - Taste Profile Guide Complete.md"},
+  { name: "Safety Guide", file: "File 19.0 - Safety Guide Complete.md"},
+  { name: "Quick Reference", file: "File 20.0 - Quick Reference Card Complete.md"},
+  { name: "Shopping Guide", file: "File 21.0 - Stocking & Shopping Guide.md"},
 ];
 
 
