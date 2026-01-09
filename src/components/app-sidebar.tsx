@@ -1,5 +1,5 @@
 import { Home, BookOpen } from 'lucide-react';
-import { SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarGroup, SidebarMenuSub, SidebarMenuSubItem, SidebarMenuSubButton } from './ui/sidebar';
+import { SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarGroup, SidebarMenuSub, SidebarMenuSubItem } from './ui/sidebar';
 import {
   Accordion,
   AccordionContent,
@@ -70,10 +70,11 @@ export default function AppSidebar() {
                   <SidebarMenuSub>
                     {manualFiles.map(item => (
                       <SidebarMenuSubItem key={item.file}>
-                        <Link href={`/manual/${encodeURIComponent(item.file)}`} passHref>
-                          <SidebarMenuSubButton asChild>
-                            <span>{item.name}</span>
-                          </SidebarMenuSubButton>
+                        <Link 
+                          href={`/manual/${encodeURIComponent(item.file)}`}
+                          className="flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 text-sidebar-foreground outline-none ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 text-sm group-data-[collapsible=icon]:hidden"
+                        >
+                          <span>{item.name}</span>
                         </Link>
                       </SidebarMenuSubItem>
                     ))}
