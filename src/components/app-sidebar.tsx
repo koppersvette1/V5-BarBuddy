@@ -64,9 +64,9 @@ export default function AppSidebar() {
                   <SidebarMenuSub>
                     {manualFiles.map(item => (
                       <SidebarMenuSubItem key={item.file}>
-                        <Link href={`/manual/${item.file}`} passHref>
-                          <SidebarMenuSubButton>
-                            {item.name}
+                        <Link href={`/manual/${item.file}`}>
+                          <SidebarMenuSubButton asChild>
+                            <span>{item.name}</span>
                           </SidebarMenuSubButton>
                         </Link>
                       </SidebarMenuSubItem>
