@@ -10,29 +10,41 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { Wand2, Loader, Flame, Sprout, Baby } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { getProTips, type ProTipsOutput } from '@/ai/flows/pro-tips';
 
 interface CocktailCardProps {
   cocktail: Cocktail;
 }
 
-type ExternalData = {
-  cleanedIngredients: string[];
-  smokeRecommendation?: string;
-};
-
 export default function CocktailCard({ cocktail }: CocktailCardProps) {
   const [isPending, startTransition] = useTransition();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [externalData, setExternalData] = useState<ExternalData | null>(null);
+  const [externalData, setExternalData] = useState<ProTipsOutput | null>(null);
   const [error, setError] = useState<string | null>(null);
   const { toast } = useToast();
 
   const handleFetchExternal = () => {
-    // This function is currently not connected to any AI flow.
-    // It is a placeholder for future AI-powered features.
-    toast({
-      title: "Pro Tips Coming Soon!",
-      description: "This feature will provide AI-powered enhancements to your recipes.",
+    setIsDialogOpen(true);
+    setError(null);
+    setExternalData(null);
+    startTransition(async () => {
+      try {
+        const result = await getProTips({
+          name: cocktail.name,
+          ingredients: cocktail.ingredients,
+          instructions: cocktail.instructions,
+          baseSpirit: cocktail.baseSpirit,
+        });
+        setExternalData(result);
+      } catch (e: any) {
+        console.error(e);
+        setError(e.message || 'An unexpected error occurred.');
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "Could not fetch AI pro tips.",
+        });
+      }
     });
   };
 
@@ -67,8 +79,8 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
           <div className="flex justify-between items-start">
             <CardTitle className="font-headline text-2xl">{cocktail.name}</CardTitle>
             <Badge variant={badgeInfo.variant} className={badgeInfo.className}>
-              {badgeInfo.icon}
-              <span>{cocktail.type}</span>
+               {badgeInfo.icon}
+               <span>{cocktail.type}</span>
             </Badge>
           </div>
           <CardDescription>{cocktail.baseSpirit !== 'N/A' ? `Base: ${cocktail.baseSpirit}` : 'Non-alcoholic'}</CardDescription>
@@ -94,7 +106,7 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
               disabled={isPending}
               className="w-full bg-accent/90 text-accent-foreground hover:bg-accent hover:shadow-md transition-all"
             >
-              {isPending ? <Loader className="animate-spin" /> : <Wand2 />}
+              {isPending && isDialogOpen ? <Loader className="animate-spin" /> : <Wand2 />}
               <span>Get Pro Tips</span>
             </Button>
           )}
@@ -105,7 +117,7 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle className="font-headline text-2xl text-primary">{cocktail.name} - Pro Tips</DialogTitle>
-            <DialogDescription>AI-enhanced recipe from TheCocktailDB.</DialogDescription>
+            <DialogDescription>AI-enhanced recipe analysis.</DialogDescription>
           </DialogHeader>
           <div className="py-4 space-y-4">
             {isPending && (
@@ -123,14 +135,14 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
             {externalData && (
               <div className="space-y-6 animate-in fade-in-50 duration-500">
                 <div>
-                  <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Cleaned Ingredients</h4>
+                  <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Standardized Ingredients</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm">
                     {externalData.cleanedIngredients.map((ing, i) => (
                       <li key={i}>{ing}</li>
                     ))}
                   </ul>
                 </div>
-                {externalData.smokeRecommendation && externalData.smokeRecommendation !== 'No Smoke Pairing Available' && (
+                {externalData.smokeRecommendation && externalData.smokeRecommendation !== 'N/A' && (
                   <div>
                      <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-2">
                       <Flame className="h-4 w-4"/>
