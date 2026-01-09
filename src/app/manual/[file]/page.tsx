@@ -36,6 +36,17 @@ export async function generateStaticParams() {
 }
 
 export default async function ManualPage({ params }: { params: { file: string } }) {
+  if (typeof params.file !== 'string') {
+    return (
+        <div className="flex flex-col min-h-screen bg-background">
+          <main className="flex-1 container mx-auto p-4 md:p-8">
+            <h1 className="text-3xl font-bold text-destructive">Error</h1>
+            <p className="mt-4">Invalid file parameter provided.</p>
+          </main>
+        </div>
+    );
+  }
+    
   const manualDir = path.join(process.cwd(), 'manual', 'Manual');
   const filePath = path.join(manualDir, params.file);
   let content = '';
