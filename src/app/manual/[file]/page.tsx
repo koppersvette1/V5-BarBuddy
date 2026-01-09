@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -27,13 +26,6 @@ const getMarkdownFiles = async () => {
   }
 };
 
-// This function is needed by Next.js to know which dynamic routes to pre-render
-export async function generateStaticParams() {
-  const files = await getMarkdownFiles();
-  return files.map(file => ({
-    file: file,
-  }));
-}
 
 export default async function ManualPage({ params }: { params: { file: string } }) {
   if (typeof params.file !== 'string') {
