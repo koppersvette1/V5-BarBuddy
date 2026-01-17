@@ -40,9 +40,9 @@ Open a terminal in your project's **root directory** (the main folder containing
     git commit -m "Initial commit"
     ```
 
-4.  **Connect your local project to the repository on GitHub.** Make sure to replace the URL with the one from your own GitHub repository page.
+4.  **Connect your local project to the repository on GitHub.**
     ```bash
-    git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+    git remote add origin https://github.com/koppersvette1/V5-BarBuddy.git
     ```
 
 5.  **Push your code up to GitHub:**
