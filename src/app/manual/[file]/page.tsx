@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
@@ -12,39 +13,20 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-
-
-// Function to get all markdown files
-const getMarkdownFiles = async () => {
-  const manualDir = path.join(process.cwd(), 'manual', 'Manual');
-  try {
-    const filenames = await fs.readdir(manualDir);
-    return filenames.filter(filename => filename.endsWith('.md'));
-  } catch (error) {
-    console.error("Could not read manual directory:", error);
-    return [];
-  }
-};
-
+import { manualFiles } from '@/lib/manual-files';
 
 export default async function ManualPage({ params }: { params: { file: string } }) {
-  const decodedFile = params.file ? decodeURIComponent(params.file) : undefined;
-  
-  if (typeof decodedFile !== 'string') {
-    return (
-        <div className="flex flex-col min-h-screen bg-background">
-          <main className="flex-1 container mx-auto p-4 md:p-8">
-            <h1 className="text-3xl font-bold text-destructive">Error</h1>
-            <p className="mt-4">Invalid file parameter provided.</p>
-          </main>
-        </div>
-    );
+  const slug = params.file;
+  const manualItem = manualFiles.find(item => item.slug === slug);
+
+  if (!manualItem) {
+    notFound();
   }
     
   const manualDir = path.join(process.cwd(), 'manual', 'Manual');
-  const filePath = path.join(manualDir, decodedFile);
+  const filePath = path.join(manualDir, manualItem.file);
   let content = '';
-  let title = decodedFile.replace('.md', '').replace(/File \d+\.\d+ - /, '');
+  const title = manualItem.name;
 
   try {
     content = await fs.readFile(filePath, 'utf8');
@@ -52,15 +34,16 @@ export default async function ManualPage({ params }: { params: { file: string } 
     return (
       <div className="flex flex-col min-h-screen bg-background">
         <main className="flex-1 container mx-auto p-4 md:p-8">
-          <h1 className="text-3xl font-bold text-destructive">Error</h1>
-          <p className="mt-4">Could not load the manual file: {decodedFile}</p>
+          <h1 className="text-3xl font-bold text-destructive">Server Error</h1>
+          <p className="mt-4">Could not load the manual file: {manualItem.file}</p>
+           <p className="mt-2 text-sm text-muted-foreground">This file is listed in the navigation but could not be found on the server.</p>
         </main>
       </div>
     );
   }
 
-  const allFiles = await getMarkdownFiles();
-  const currentIndex = allFiles.findIndex(f => f === decodedFile);
+  const allFiles = manualFiles;
+  const currentIndex = allFiles.findIndex(f => f.slug === slug);
   const prevFile = currentIndex > 0 ? allFiles[currentIndex - 1] : null;
   const nextFile = currentIndex < allFiles.length - 1 ? allFiles[currentIndex + 1] : null;
 
@@ -86,13 +69,13 @@ export default async function ManualPage({ params }: { params: { file: string } 
 
           <div className="flex justify-between mt-12 border-t pt-4 not-prose">
             {prevFile ? (
-              <Link href={`/manual/${encodeURIComponent(prevFile)}`}>
-                <Button variant="outline">Previous</Button>
+              <Link href={`/manual/${prevFile.slug}`}>
+                <Button variant="outline">Previous: {prevFile.name}</Button>
               </Link>
             ) : <div />}
             {nextFile ? (
-              <Link href={`/manual/${encodeURIComponent(nextFile)}`}>
-                <Button variant="outline">Next</Button>
+              <Link href={`/manual/${nextFile.slug}`}>
+                <Button variant="outline">Next: {nextFile.name}</Button>
               </Link>
             ) : <div />}
           </div>
