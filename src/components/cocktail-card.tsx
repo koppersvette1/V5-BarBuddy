@@ -66,47 +66,48 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
   return (
     <>
       <Card className="flex flex-col h-full bg-card hover:bg-card/90 transition-colors duration-200 group">
-        <CardHeader>
-          <div className="relative aspect-[3/2] w-full mb-4">
+        <CardHeader className="p-3 sm:p-4 md:p-6">
+          <div className="relative aspect-[3/2] w-full mb-3 sm:mb-4">
             <Image
               src={cocktail.imageUrl || ''}
               alt={cocktail.name}
               fill
               className="rounded-md object-cover"
               data-ai-hint="cocktail drink"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <div className="flex justify-between items-start">
-            <CardTitle className="font-headline text-2xl">{cocktail.name}</CardTitle>
-            <Badge variant={badgeInfo.variant} className={badgeInfo.className}>
+          <div className="flex justify-between items-start gap-2">
+            <CardTitle className="font-headline text-lg sm:text-xl md:text-2xl leading-tight">{cocktail.name}</CardTitle>
+            <Badge variant={badgeInfo.variant} className={`${badgeInfo.className} flex-shrink-0 text-xs sm:text-sm`}>
                {badgeInfo.icon}
                <span>{cocktail.type}</span>
             </Badge>
           </div>
-          <CardDescription>{cocktail.baseSpirit !== 'N/A' ? `Base: ${cocktail.baseSpirit}` : 'Non-alcoholic'}</CardDescription>
+          <CardDescription className="text-xs sm:text-sm">{cocktail.baseSpirit !== 'N/A' ? `Base: ${cocktail.baseSpirit}` : 'Non-alcoholic'}</CardDescription>
         </CardHeader>
-        <CardContent className="flex-grow space-y-4">
+        <CardContent className="flex-grow space-y-3 sm:space-y-4 p-3 sm:p-4 md:p-6 pt-0">
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Ingredients</h4>
-            <ul className="list-disc list-inside space-y-1 text-sm">
+            <h4 className="font-bold text-xs sm:text-sm uppercase tracking-wider text-muted-foreground mb-2">Ingredients</h4>
+            <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm leading-relaxed">
               {cocktail.ingredients.map((ing, i) => (
                 <li key={i}>{ing}</li>
               ))}
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Instructions</h4>
-            <p className="text-sm">{cocktail.instructions}</p>
+            <h4 className="font-bold text-xs sm:text-sm uppercase tracking-wider text-muted-foreground mb-2">Instructions</h4>
+            <p className="text-xs sm:text-sm leading-relaxed">{cocktail.instructions}</p>
           </div>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="p-3 sm:p-4 md:p-6 pt-0">
           {cocktail.type === 'Lead' && (
             <Button
               onClick={handleFetchExternal}
               disabled={isPending}
-              className="w-full bg-accent/90 text-accent-foreground hover:bg-accent hover:shadow-md transition-all"
+              className="w-full bg-accent/90 text-accent-foreground hover:bg-accent hover:shadow-md transition-all h-10 sm:h-11 text-sm sm:text-base touch-manipulation"
             >
-              {isPending && isDialogOpen ? <Loader className="animate-spin" /> : <Wand2 />}
+              {isPending && isDialogOpen ? <Loader className="animate-spin h-4 w-4 sm:h-5 sm:w-5" /> : <Wand2 className="h-4 w-4 sm:h-5 sm:w-5" />}
               <span>Get Pro Tips</span>
             </Button>
           )}
@@ -114,29 +115,29 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
       </Card>
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="max-w-[calc(100vw-2rem)] sm:max-w-[425px] max-h-[85vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="font-headline text-2xl text-primary">{cocktail.name} - Pro Tips</DialogTitle>
-            <DialogDescription>AI-enhanced recipe analysis.</DialogDescription>
+            <DialogTitle className="font-headline text-xl sm:text-2xl text-primary pr-6">{cocktail.name} - Pro Tips</DialogTitle>
+            <DialogDescription className="text-xs sm:text-sm">AI-enhanced recipe analysis.</DialogDescription>
           </DialogHeader>
-          <div className="py-4 space-y-4">
+          <div className="py-3 sm:py-4 space-y-3 sm:space-y-4">
             {isPending && (
-              <div className="flex justify-center items-center gap-2 text-muted-foreground">
-                <Loader className="animate-spin h-5 w-5" />
+              <div className="flex justify-center items-center gap-2 text-muted-foreground text-sm">
+                <Loader className="animate-spin h-4 w-4 sm:h-5 sm:w-5" />
                 <span>Augmenting recipe with AI...</span>
               </div>
             )}
             {error && (
               <Alert variant="destructive">
-                <AlertTitle>Failed to Fetch Tips</AlertTitle>
-                <AlertDescription>{error}</AlertDescription>
+                <AlertTitle className="text-sm sm:text-base">Failed to Fetch Tips</AlertTitle>
+                <AlertDescription className="text-xs sm:text-sm">{error}</AlertDescription>
               </Alert>
             )}
             {externalData && (
-              <div className="space-y-6 animate-in fade-in-50 duration-500">
+              <div className="space-y-4 sm:space-y-6 animate-in fade-in-50 duration-500">
                 <div>
-                  <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2">Standardized Ingredients</h4>
-                  <ul className="list-disc list-inside space-y-1 text-sm">
+                  <h4 className="font-bold text-xs sm:text-sm uppercase tracking-wider text-muted-foreground mb-2">Standardized Ingredients</h4>
+                  <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm leading-relaxed">
                     {externalData.cleanedIngredients.map((ing, i) => (
                       <li key={i}>{ing}</li>
                     ))}
@@ -144,11 +145,11 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
                 </div>
                 {externalData.smokeRecommendation && externalData.smokeRecommendation !== 'N/A' && (
                   <div>
-                     <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-2">
+                     <h4 className="font-bold text-xs sm:text-sm uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-2">
                       <Flame className="h-4 w-4"/>
                       Smoke Recommendation
                     </h4>
-                    <p className="text-sm font-semibold text-primary bg-primary/10 p-3 rounded-md">
+                    <p className="text-xs sm:text-sm font-semibold text-primary bg-primary/10 p-3 rounded-md leading-relaxed">
                       {externalData.smokeRecommendation}
                     </p>
                   </div>
