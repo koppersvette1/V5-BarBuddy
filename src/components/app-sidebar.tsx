@@ -1,3 +1,5 @@
+'use client';
+
 import { Home, BookOpen } from 'lucide-react';
 import { SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarGroup, SidebarMenuSub, SidebarMenuSubItem } from './ui/sidebar';
 import {
