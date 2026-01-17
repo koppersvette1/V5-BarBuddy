@@ -61,6 +61,7 @@ const getIngredientName = (ingredient: string): string => {
 
 export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [ingredientSearch, setIngredientSearch] = useState('');
   const [inventory, setInventory] = useState<string[]>([]);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [hydrated, setHydrated] = useState(false);
@@ -79,6 +80,13 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
     });
     return Array.from(ingredientsSet).sort((a, b) => a.localeCompare(b));
   }, [cocktails]);
+
+  const filteredIngredients = useMemo(() => {
+    if (ingredientSearch === '') return allIngredients;
+    return allIngredients.filter(ingredient =>
+      ingredient.toLowerCase().includes(ingredientSearch.toLowerCase())
+    );
+  }, [allIngredients, ingredientSearch]);
 
   const handleInventoryChange = (ingredient: string) => {
     setInventory(prev =>
@@ -143,9 +151,20 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
             </Button>
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <div className="mt-4 p-4 border rounded-md bg-background max-h-64 overflow-y-auto">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {allIngredients.map(ingredient => (
+            <div className="mt-4 p-4 border rounded-md bg-background">
+              <div className="relative mb-4">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  type="text"
+                  placeholder="Search ingredients..."
+                  value={ingredientSearch}
+                  onChange={e => setIngredientSearch(e.target.value)}
+                  className="pl-10 h-10"
+                />
+              </div>
+              <div className="max-h-64 overflow-y-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {filteredIngredients.map(ingredient => (
                   <div key={ingredient} className="flex items-center space-x-2">
                     <Checkbox
                       id={ingredient}
@@ -156,6 +175,7 @@ export default function CocktailSearch({ cocktails }: { cocktails: Cocktail[] })
                     <Label htmlFor={ingredient} className="cursor-pointer">{ingredient}</Label>
                   </div>
                 ))}
+                </div>
               </div>
             </div>
           </CollapsibleContent>
