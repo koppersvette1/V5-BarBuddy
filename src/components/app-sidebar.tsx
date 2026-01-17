@@ -30,13 +30,13 @@ export default function AppSidebar() {
           <SidebarGroup>
             <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
               <AccordionItem value="item-1" className="border-none">
-                <AccordionTrigger className="w-full hover:no-underline">
-                  <SidebarMenuButton asChild isActive={true}>
-                    <span className="w-full">
-                      <BookOpen />
-                      BarBuddy Manual
-                    </span>
-                  </SidebarMenuButton>
+                <AccordionTrigger
+                  className="h-8 w-full rounded-md p-2 text-sm font-medium hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:no-underline data-[state=open]:bg-sidebar-accent data-[state=open]:font-medium data-[state=open]:text-sidebar-accent-foreground"
+                >
+                  <span className="flex items-center gap-2">
+                    <BookOpen className="h-4 w-4 shrink-0" />
+                    <span>BarBuddy Manual</span>
+                  </span>
                 </AccordionTrigger>
                 <AccordionContent>
                   <SidebarMenuSub>
