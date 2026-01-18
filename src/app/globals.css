@@ -87,3 +87,48 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Mobile-first optimizations */
+@layer utilities {
+  /* Improve touch interactions */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Smooth scrolling for mobile */
+  @media (max-width: 768px) {
+    html {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Optimize font rendering on mobile */
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Better input styling on mobile */
+    input, textarea, select {
+      font-size: 16px; /* Prevents zoom on iOS */
+    }
+  }
+
+  /* Active state for touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    button:active,
+    a:active,
+    [role="button"]:active {
+      opacity: 0.7;
+      transform: scale(0.98);
+    }
+  }
+}
